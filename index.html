@@ -26,12 +26,16 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->       
     <link rel="shortcut icon" href="images/ico/me_big.ico"> 
-
+    <script>
+        window.onload = function() {
+    document.getElementById("my_audio").play();
+    }
+    </script>
 </head> 
 
 <body id="home">
     <h3>Song</h3>
-    <audio autoplay controls><source src="background_track.mp3" type="audio/mp3"></audio>
+    <audio autoplay controls><source id = "my_audio" src="background_track.mp3" type="audio/mp3"></audio>
     <header id="header">
         <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
             <div class="container">
