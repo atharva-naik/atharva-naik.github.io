@@ -4,13 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="webthemez">
+    <meta name="author" content="atharva-naik">
     <title>Personal Webpage</title>
     <!-- core CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <!-- <script src="js/jquery-3.2.1.min.js"></script> -->
     <!-- <script src="js/fontawesome-all.min.js"></script> -->
+    <!-- <script>
+        window.onload = function() {
+        document.getElementById("player").play();
+    }
+    </script> -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet"> 
@@ -21,13 +26,12 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->       
     <link rel="shortcut icon" href="images/ico/me_big.ico"> 
-    <script>window.onload = function() {
-        document.getElementById("my_audio").play();
-    }</script>
+
 </head> 
 
 <body id="home">
-    <audio id="my_audio" src="background_track.mp3" loop="loop"></audio>
+    <h3>Song</h3>
+    <audio autoplay controls><source src="audio/background_track.mp3" type="audio/mp3"></audio>
     <header id="header">
         <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
             <div class="container">
