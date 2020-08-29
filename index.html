@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        var audio = new Audio('background_track.mp3');
+        audio.play();
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -11,11 +15,6 @@
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <!-- <script src="js/jquery-3.2.1.min.js"></script> -->
     <!-- <script src="js/fontawesome-all.min.js"></script> -->
-    <!-- <script>
-        window.onload = function() {
-        document.getElementById("player").play();
-    }
-    </script> -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet"> 
@@ -26,19 +25,20 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->       
     <link rel="shortcut icon" href="images/ico/me_big.ico"> 
-    <script>
+    <!-- <script>
         window.onload = function() {
-    document.getElementById("my_audio").play();
-    }
+    // document.getElementById("audio.").getElementById("my_audio").getElementById("song").play();
+    document.getElementsByTagName("audio").play()
+    } -->
     </script>
 </head> 
 
 <body id="home">
-    <h3>Song</h3>
-    <!-- <audio autoplay controls><source id = "my_audio" src="background_track.mp3" type="audio/mp3"></audio> -->
-        <audio autoplay>
-            <source src="background_track.mp3" type="audio/mpeg">
-        </audio>
+    <!-- <audio src="background_track.mp3"></audio> -->
+    <!-- <audio ref='themeSong' src="vendor/assets/music/Tetris.mp3" autoPlay loop></audio> -->
+    <!-- <h3 id = "audio">
+    <audio id="my_audio" autoplay controls><source id="song" src="background_track.mp3" type="audio/mp3"></audio>
+    </h3> -->
     <header id="header">
         <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
             <div class="container">
