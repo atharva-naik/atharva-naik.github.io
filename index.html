@@ -1,741 +1,513 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="atharva-naik">
-    <title>Personal Webpage</title>
-    <script>
-        var audio = new Audio('background_track.mp3');
-        audio.play();
-    </script>
-    <!-- <iframe style="display: none;" width="560" height="315" src="https://www.youtuberepeater.com/watch?v=DC6JppqHkaM#gsc.tab=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-    <!-- core CSS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-    <!-- <script src="js/jquery-3.2.1.min.js"></script> -->
-    <!-- <script src="js/fontawesome-all.min.js"></script> -->
-    <link rel="shortcut icon" href="images/ico/me_big.ico"> 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet"> 
-    <link href="css/prettyPhoto.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet"> 
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->       
-</head> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<body id="home">
-    <header id="header">
-        <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner" style="height: 30px; padding-right: -100px;">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!-- <a class="navbar-brand" href="index.html"><img src="images/site-logos/6.png" alt="logo" style="height: 30px;"></a> -->
-                </div>
-				
-                <div class="collapse navbar-collapse navbar-right" style="padding-right: 300px;">
-                    <ul class="nav navbar-nav">
-                        <li class="scroll active"><a href="#home" style="padding-top: 15px; padding-bottom: 10px;">Home</a></li> 
-						<!-- <li class="scroll"><a href="#features" style="padding-top: 15px; padding-bottom: 10px;">Events</a></li> -->
-                        <li class="scroll"><a href="#services" style="padding-top: 15px; padding-bottom: 10px;">Interests</a></li>
-                        <li class="scroll"><a href="#pricing" style="padding-top: 15px; padding-bottom: 10px;">Projects</a></li>
-                        <li class="scroll"><a href="#about" style="padding-top: 15px; padding-bottom: 10px;">About</a></li> 
-                        <li class="scroll"><a href="#business-stats" style="padding-top: 15px; padding-bottom: 10px;">CV</a></li>
-                        <li class="scroll"><a href="#our-team" style="padding-top: 15px; padding-bottom: 10px;">Course Work</a></li>
-                        <li class="scroll"><a href="#contact-us" style="padding-top: 15px; padding-bottom: 10px;">Contact</a></li>                        
-                    </ul>
-                </div>
-            </div><!--/.container-->
-        </nav><!--/nav-->
-    </header><!--/header-->
+    <title>Atharva's Portfolio </title>
 
-    <section id="hero-banner">
-             <div class="banner-inner">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                 
-                                    <h2><b>Welcome!</b> to my personal webpage</h2>
-                                    <p>Interested in colaborating? Drop an email, by clicking the button below.<br/> Thank you for your interest.</p>
-                                    <a class="btn btn-primary btn-lg" href="mailto:atharvanaik2018@gmail.com">Get in touch</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    </section><!--/#main-slider-->
-     <section id="features">
-	 <div class="container">
-	   <div class="section-header">
-                <h2 class="section-title wow fadeInDown">My current affiliation</h2>
-                <p class="wow fadeInDown">I am currently a 3rd year Computer Science and Engineering undergraduate student at <b> <a href="http://www.iitkgp.ac.in/">IIT Kharagpur</a> </b>. <br> Graduation expected in 2022.</p>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="base.css"> -->
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link rel="stylesheet" href="vendor.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <style>
+        .subheading {
+            color: #6d7fcc;
+            text-shadow: 0 0 3px #abb5e0, 0 0 1px #abb5e0, 0 0 40px; 
+        }
+        .textwrap {
+            float: left;
+            margin-right: 20px;
+        }
+        /* Three image containers (use 25% for four, and 50% for two, etc) */
+        .column {
+        float: left;
+        width: 20%;
+        padding: 5px;
+        }
+
+        /* Clear floats after image containers */
+        .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+        /* Chrome, safari */
+        *::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }    
+        *::-webkit-scrollbar-track {
+            background-color: rgba(235, 235, 235, 0);
+        }
+        *::-webkit-scrollbar-track:hover {
+            background-color: rgba(235, 235, 235, 0.1);
+        }
+        *::-webkit-scrollbar-thumb {
+            background-color: gray;
+        }
+        *::-webkit-scrollbar-thumb:hover {
+            background-color: orange;
+        }
+        *::-webkit-scrollbar-corner {
+            background-color: transparent;
+            /* background: rgba(235, 235, 235, 0.1); */
+        }
+        /* Firefox */
+        /* .selector {
+            scrollbar-width: none;
+        } */
+        /* ------------------------------------------------------------------- 
+        * ## home social 
+        * ------------------------------------------------------------------- */
+        .home-social {
+            font-family: "montserrat-regular", sans-serif;
+            list-style: none;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            right: 5.4rem;
+            -webkit-transform: translate3d(0, -50%, 0);
+            -ms-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+        }
+
+        .home-social a {
+            color: white;
+            -webkit-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .home-social li {
+            position: relative;
+            padding: .9rem 0;
+        }
+
+        .home-social li a {
+            display: block;
+            width: 33px;
+            height: 33px;
+        }
+
+        .home-social i, .home-social span {
+            position: absolute;
+            top: 0;
+            line-height: 33px;
+            -webkit-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .home-social i {
+            font-size: 14px;
+            right: 0;
+            text-align: center;
+            display: inline-block;
+            width: 33px;
+            height: 33px;
+            line-height: calc(33px - 4px);
+            border: 2px solid #FFFFFF;
+            border-radius: 50%;
+        }
+
+        .home-social span {
+            color: #39b54a;
+            right: 4.5rem;
+            font-size: 1.3rem;
+            opacity: 0;
+            visibility: hidden;
+            -webkit-transform: scale(0);
+            -ms-transform: scale(0);
+            transform: scale(0);
+            -webkit-transform-origin: 100% 50%;
+            -ms-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+        }
+
+        .home-social li:hover span {
+            opacity: 1;
+            visibility: visible;
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+        }
+        @media only screen and (max-width: 700px) {
+            .home-content__main {
+                max-width: 490px;
+            }
+            .home-content__buttons {
+                padding-top: 1.2rem;
+                text-align: center;
+            }
+            .home-content__buttons .btn {
+                display: block;
+                width: 70%;
+                margin: 1.5rem 0 0 0;
+            }
+            .home-social {
+                right: 4rem;
+            }
+            .home-content__scroll {
+                right: 7.5rem;
+            }
+            .home-content__line {
+                right: 5.5rem;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            .home-content h1 {
+                font-size: 3.8rem;
+            }
+            .home-social {
+                right: 2rem;
+            }
+            .home-social li {
+                padding: .6rem 0;
+            }
+            .home-social i {
+                font-size: 17px;
+                border: none;
+            }
+            .home-social span {
+                display: none;
+            }
+            .home-content__scroll {
+                bottom: 5.4rem;
+            }
+            .home-content__line {
+                height: 7.2rem;
+            }
+        }
+        @media only screen and (max-width: 500px) {
+            .s-home {
+                min-height: 642px;
+            }
+            .home-content h1 {
+                font-size: 3.5rem;
+            }
+            .home-content__main {
+                text-align: center;
+                max-width: none;
+                padding-top: 15rem;
+                padding-right: 25px;
+                width: 85%;
+            }
+            .home-content__buttons {
+                padding-top: 1.2rem;
+            }
+            .home-content__buttons .btn {
+                width: auto;
+                margin: 1.5rem 0 0 0;
+            }
+            .home-social {
+                display: none;
+            }
+        }
+        .material-div {
+            color: #fff;
+            background-color: #484848;
+            padding: 15px;
+            font-size: 13px;
+            /* white-space: nowrap; */
+            overflow: hidden;
+            height: 250px;
+            text-overflow: ellipsis;
+        }
+        .material-div:hover {
+            color: #fff;
+            background: rgb(64,118,184);
+            background: radial-gradient(circle, rgba(64,118,184,1) 25%, rgba(53,184,182,1) 91%);
+            margin-bottom: 5px;
+            margin-right: 5px;
+        }
+        /* .authors {
+            background-image: url('authors-div.png');
+            margin: 5px;
+        } */
+        .material-div.paper-title {
+            color: #fff;
+            background-color: #484848;
+            padding: 10px;
+            font-size: 13px;
+        }
+        .material-div.paper-title:hover {
+            color: #484848;
+        }
+    </style>
+</head>
+
+<body style="background-color: #292929;">
+    <div style="text-align: center; padding-top: 10px; padding-bottom: 2px; background-image: url('authors-div.png'); background-position: center; background-size: cover; font-family: 'Titillium Web'; font-weight: bold; color: #fff">
+        <h3 style="font-size: 35px">Hi it's Atharva <img src="waving-emoji.png" width="35px"/> Here's what I do</h3>
+    </div>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar" style="background-image: url('bg_texture2.png')">
+            <div class="sidebar-header" style="background-image: url('bg_texture2.png')">
+                <h3 style="font-size: 23px;">Navigate</h3>
+                <strong>NP</strong>
             </div>
-	 <div class="row FeatLayout">
-<!-- <div class="col-md-5 Featimg"> <img src="https://sc01.alicdn.com/kf/UTB8MpHao_zIXKJkSafVxh5WgXXaj.jpeg" alt="feature" class="img-responsive center-block"></div>
-<div class="col-md-7"> -->
-<!-- <h2>Important career and life events</h2>
-<p>Most important occurences in my life from latest to oldest for those who might be interested.</p> -->
-<ul class="listarrow">
-<!-- <li><i class="fa fa-angle-double-right"></i>First paper submission in a workshop, awaiting results</li> -->
-<!-- <li><i class="fa fa-angle-double-right"></i>Achieved top 1% ranking and department change from Mathematics and Computing to Computer Science and Engineering</li>
-<li><i class="fa fa-angle-double-right"></i>Team Eklavya 7.0 bags second spot in IGVC AutoNav challenge, and is the first to qualify</li> -->
-<!-- <li><i class="fa fa-angle-double-right"></i>cPanel Access</li>
-<li><i class="fa fa-angle-double-right"></i>MySQL Databases</li>
-<li><i class="fa fa-angle-double-right"></i>Unlimited Bandwidth</li>
-<li><i class="fa fa-angle-double-right"></i>Web Secutity</li> -->
-</ul>
-</div>
-</div>
-	 </div>
-	 </section>
- <section id="services" >
-        <div class="container">
-
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Current top interests</h2>
-                <p class="wow fadeInDown">A list of my current interests, stuff that I use daily or am learning <br> Subject to constant change.</p>
-            </div>
-
-            <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
-                <div class="media service-box">
-                    <div class="pull-left">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Deep Learning</h4>
-                        <p>Intrested in developing efficient deep learning architectures for NLP tasks. Decent familiarity with PyTorch, currently learning tensorflow.</p>
-                    </div>
-                </div>
-            </div><!--/.col-md-4-->
-
-            <div class="row">
-                <div class="features">
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fas fa-language"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Natural Language Processing</h4>
-                                <p>Intrested in dialogue, hate speech detection, text style transfer, controlled generation, summarization, aspect extraction, event extraction, fine grained emotion detection</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-
-
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-database"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Django back-end</h4>
-                                <p>I did my software engineering course project in django and would love to work with the framework again.</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-                
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-bar-chart"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Data Mining</h4>
-                                <p>Interested in data mining and personalised recommendation. An intriguing subject is dialogue based recommendation</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fas fa-robot"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Browser Automation</h4>
-                                <p>Casually interested in Selenium based browser automation, sometimes making automated login scripts. Also made facebook login and selenium based simple whatsapp chatbot</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-
-                    <!-- <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-bullseye"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">MySQL</h4>
-                                <p>Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
-                            </div>
-                        </div>
-                    </div>/.col-md-4 -->
-                </div>
-            </div><!--/.row-->    
-        </div><!--/.container-->
-    </section><!--/#services-->
-
-   
- <section id="portfolio" style="display:none;">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Servers</h2>
-                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
-            </div>
-
-            <div class="text-center">
-                <ul class="portfolio-filter">
-                    <li><a class="active" href="#" data-filter="*">All Works</a></li>
-                    <li><a href="#" data-filter=".designing">Designing</a></li>
-                    <li><a href="#" data-filter=".mobile">Mobile App</a></li>
-                    <li><a href="#" data-filter=".development">Development</a></li>
-                </ul><!--/#portfolio-filter-->
-            </div>
-
-            <div class="portfolio-items">
-                <div class="portfolio-item designing">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/01.jpg" alt="">
-                        <div class="portfolio-info">
-                            <h3>Project Name</h3>
-                            Some description..
-                            <a class="preview" href="images/portfolio/01.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
-
-                <div class="portfolio-item mobile development">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/02.jpg" alt="">
-                        <div class="portfolio-info">
-                            <h3>Project Name</h3>
-                             Some description..
-                            <a class="preview" href="images/portfolio/02.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
-
-                <div class="portfolio-item designing">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/03.jpg" alt="">
-                        <div class="portfolio-info">
-                            <h3>Project Name</h3>
-                             Some description..
-                            <a class="preview" href="images/portfolio/03.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
-
-                <div class="portfolio-item mobile">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/04.jpg" alt="">
-                        <div class="portfolio-info">
-                            <h3>Project Name</h3>
-                            Some description..
-                            <a class="preview" href="images/portfolio/04.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
-
-                <div class="portfolio-item designing development">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/05.jpg" alt="">
-                        <div class="portfolio-info">
-                            <h3>Project Name</h3>
-                             Some description..
-                            <a class="preview" href="images/portfolio/05.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
-
-                <div class="portfolio-item mobile">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/06.jpg" alt="">
-                        <div class="portfolio-info">
-                            <h3>Project Name</h3>
-                             Some description..
-                            <a class="preview" href="images/portfolio/06.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
-
-                <div class="portfolio-item designing development">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/07.jpg" alt="">
-                        <div class="portfolio-info">
-                            <h3>Project Name</h3>
-                             Some description..
-                            <a class="preview" href="images/portfolio/07.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
-
-                <div class="portfolio-item mobile">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/08.jpg" alt="">
-                        <div class="portfolio-info">
-                            <h3>Project Name</h3>
-                             Some description..
-                            <a class="preview" href="images/portfolio/08.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
-            </div>
-        </div><!--/.container-->
-    </section><!--/#portfolio-->
-
- <section id="pricing">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Projects</h2>
-                <p class="wow fadeInDown">I started out with an interest in robotics and autonomous driving, now I am an <b>NLP enthusiast</b> (Natural Language Processing).<br> My interests lie in <b>dialogue, summariation, hate speech detection, emotion detection </b> and <b> sentiment analysis</b>. </p>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="200ms">
-                    <ul class="pricing featured">
-                        <li class="plan-header">
-                            <div class="price-duration">
-                                <span class="price">
-                                    Ongoing
-                                </span>
-                                <span class="duration">
-                                    since July 2020
-                                </span>
-                            </div>
-
-                            <div class="plan-name">
-                                COVID-19 event extraction
-                            </div>
+            <ul class="list-unstyled components" style="font-size: 15px;">
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-home"></i>
+                        About
+                    </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">IIT KGP</a>
                         </li>
-                        <li> <strong>Summary:</strong> Extraction of events related to <strong>COVID-19</strong> and answering slot filling questions related to each event type. </li>
-                        <li> <strong>For:</strong> <a href="http://noisy-text.github.io/2020/extract_covid19_event-shared_task.html"><b> EMNLP workshop shared task. </b></a>  </li>
-                        <li> <strong>Collaborators:</strong> Aakanksha Naik</li>
-                        <li><strong>Github</strong> link will be added after completion</li>
-                        <li class="plan-purchase"><a class="btn btn-primary" href="#"><i class="fa fa-github"></i> clone</a></li>
+                        <li>
+                            <a href="#">Adobe</a>
+                        </li>
+                        <li>
+                            <a href="#">CNERG</a>
+                        </li>
                     </ul>
-                </div>
-            </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-briefcase"></i>
+                        Research
+                    </a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-copy"></i>
+                        Projects
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-image"></i>
+                        Papers
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-paper-plane"></i>
+                        Contact
+                    </a>
+                </li>
+            </ul>
 
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="200ms">
-                        <ul class="pricing featured">
-                            <li class="plan-header">
-                                <div class="price-duration">
-                                    <span class="price">
-                                        Ongoing
-                                    </span>
-                                    <span class="duration">
-                                        since May 2020
-                                    </span>
-                                </div>
+            <!-- <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
+                </li>
+                <li>
+                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
+                </li>
+            </ul> -->
+        </nav>
+        <!-- Page Content  -->
+        <div id="content">
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+                <i class="fas fa-align-left"></i>
+                <span>Collapse</span>
+            </button>
+            <br><br>
+            <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid" style="background-color: #292929">
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
 
-                                <div class="plan-name">
-                                    Hate speech in Indian context
-                                </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" style="color: #fff" href="#">Page</a>
                             </li>
-                            <li> <strong>Summary:</strong> Ananlysis of religion based hatespeech in India, in hindi and english tweets, through semi supervised methods</li>
-                            <li> <strong>Collaborators:</strong> Mithun Das, Somay Chopra</li>
-                            <li><strong>Github</strong> link will be added after completion</li>
-                            <li class="plan-purchase"><a class="btn btn-primary" href="#"><i class="fa fa-github"></i> clone</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="200ms">
-                        <ul class="pricing featured">
-                            <li class="plan-header">
-                                <div class="price-duration">
-                                    <span class="price">
-                                        Ongoing
-                                    </span>
-                                    <span class="duration">
-                                        since June 2020
-                                    </span>
-                                </div>
-
-                                <div class="plan-name" style="font-size: 24px;">
-                                    STYLE TRANSFER SENTENCE COMPRESSION
-                                </div>
+                            <li class="nav-item">
+                                <a class="nav-link" style="color: #fff" href="#">Page</a>
                             </li>
-                            <li> <strong>Summary:</strong> Exploring end to end methods for multi sentence compression and style transfer in presence of noise</li>
-                            <li> <strong>Collaborators:</strong> Zishan Ahmed</li>
-                            <li><strong>Github</strong> link will be added after completion</li>
-                            <li class="plan-purchase"><a class="btn btn-primary" href="#"><i class="fa fa-github"></i> clone</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="400ms">
-                        <ul class="pricing">
-                            <li class="plan-header">
-                                <div class="price-duration">
-                                    <span class="price">
-                                        Completed
-                                    </span>
-                                    <span class="duration">
-                                        in July 2020
-                                    </span>
-                                </div>
-
-                                <div class="plan-name">
-                                    COVID-19 EMOTION DETECTION
-                                </div>
+                            <li class="nav-item">
+                                <a class="nav-link" style="color: #fff" href="#">Page</a>
                             </li>
-                            <li> <strong>Summary:</strong> Approach utilised multi-label classifiers (10 and 11 emotions) for emotion classification of <strong>COVID-19</strong> related tweets. Extraction of aspects of discussion from tweets and their usage trends over time were also analysed</li>
-                            <li> <strong>Collaborators:</strong> Sriyash Poddar, Rajdeep Mukherjee</li>
-                            <li>Submission made in <strong>CODS-COMADS 2021</strong>, fingers crossed</li>
-                            <li><strong>Github</strong> link will be available soon</li>
-                            <li class="plan-purchase"><a class="btn btn-primary" href="#"><i class="fa fa-github"></i> clone</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="600ms">
-                        <ul class="pricing">
-                            <li class="plan-header">
-                                <div class="price-duration">
-                                    <span class="price">
-                                        Completed
-                                    </span>
-                                    <span class="duration">
-                                        in April 2020
-                                    </span>
-                                </div>
-
-                                <div class="plan-name">
-                                    Aspect Based Opinion Summarization
-                                </div>
+                            <li class="nav-item">
+                                <a class="nav-link" style="color: #fff" href="#">Page</a>
                             </li>
-                            <li> <strong>Summary:</strong> Survey of aspect extraction and opinion summarization methods, tested on tourist data, Covid-19 related tweets and CORD dataset (scientific articles).</li>
-                            <li>Project for Natural Language Processing course</li>
-                            <li>Presentation link below</li>
-                            <li class="plan-purchase"><a class="btn btn-primary" href="https://docs.google.com/presentation/d/1uxPDsB0zaSYSOoWuPR9JO124ArTXnRVc3zu6guMQ4ws/edit?usp=sharing"><i class="fab fa-google-drive"></i> slides</a></li>
-                        </ul>
-                    </div>
-                    
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="600ms">
-                        <ul class="pricing">
-                            <li class="plan-header">
-                                <div class="price-duration">
-                                    <span class="price">
-                                        Completed
-                                    </span>
-                                    <span class="duration">
-                                        in April 2020
-                                    </span>
-                                </div>
-
-                                <div class="plan-name">
-                                    Organ matching and blogging forum
-                                </div>
-                            </li>
-                            <li> <strong>Summary:</strong> Django back-end and PostgreSQL database. Features implemented simple greedy matching, un-encrypted text chat, blogs and comments</li>
-                            <li>Project for software engineering course</li>
-                            <li><strong>Github</strong> link below</li>
-                            <li class="plan-purchase"><a class="btn btn-primary" href="https://github.com/atharva-naik/Software-Project/archive/master.zip"><i class="fa fa-github"></i> clone</a></li>
-                        </ul>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </section><!--/#pricing-->
-
- <section id="about">
-        <div class="container">
-
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">About Me</h2>
-                <p class="wow fadeInDown">If you want to get to know me better as a person, this is the right place </p>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-6 wow fadeInLeft">
-                  <img class="img-responsive" src="images/atharva.jpg" alt="" style="width: 450px; height:450px;">
-                </div>
-
-                <div class="col-sm-6 wow fadeInRight">
-                    <h3 class="column-title">私についてもっと知る</h3>
-                    <p>This is a photo of me with my sister (<a href="https://www.cs.cmu.edu/~anaik/">Aakanksha Naik</a>), who is also a valuable mentor for both technical and life related matters and an inspiration towards pursuing computer science.</p>
-
-                    <p>Trying my best to learn japanese, not too succesfull so far (yes I used google translate obviously). I am working on a website that explains the meaning behind my favurite japanese songs, and can potentially allow others to do the same. (ngrok link: <a href="https://atharva-naik.github.io/japanese_song_lyrics/">Nihon no uta (japanese song lyrics)</a>) </p>
-
-					<p>I aim to pursue further studies after undergrad. I did martial arts for 5 years, I also like writing poetry and short stories occasionally. I was a member of <a href="http://www.tfps.iitkgp.ac.in/"><b>TFPS</b></a> (Technology Filmmaking and Photography Society) in first year and participated in shooting of <a href="https://www.youtube.com/watch?v=vQ3nQW9Dl3g"><b>Carpe Diem</b></a>. I would like to learn 7 languages. I love anime.</p>
-
-
-                    <a class="btn btn-primary" href="#">Learn More</a>
-
-                </div>
-            </div>
-        </div>
-    </section><!--/#about-->
-   
-   
-
-    <section id="business-stats">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Relevant Profiles</h2>
-                <p class="wow fadeInDown">Some relevant website profiles that you might be interested to explore. <br> These relate to my research/projects/basics strengthening etc.</p>
-            </div>
-
-            <div class="row text-center">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
-                        <div class="business-stats" data-digit="6850" data-duration="1000"><img class="img-responsive" src="images/Octocat/Octocat.jpg" alt="Avatar" style="border-radius: 100%; align-self: auto; margin-top: 11px; margin-left: 11px; width: 110px; height: 110px;"></div>
-                        <a href="https://github.com/atharva-naik"> <strong>Github</strong> </a>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
-                        <div class="business-stats" data-digit="1465" data-duration="1000"><img class="img-responsive" src="images/LinkedIn-Logos/LI-In-Bug.png" alt="Avatar" style="align-self: auto; height: 80px; margin-left: 24px; margin-top: 24px;"></div>
-                        <a href="https://www.linkedin.com/in/atharva-naik-112888190/"> <strong>Linkedin</strong> </a>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
-                        <div class="business-stats" data-digit="4325" data-duration="1000"><img class="img-responsive" src="images/ResearchGate.png" alt="Avatar" style="align-self: auto; border-radius: 100%; height: 90px; margin-left: 20px; margin-top: 20px;"></div>
-                        <a href="#"> <strong>Research Gate</strong> </a>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
-                        <div class="business-stats" data-digit="2568" data-duration="1000"><img class="img-responsive" src="images/google-scholar.jpg" alt="Avatar" style="align-self: auto; border-radius: 100%; height: 90px; margin-left: 20px; margin-top: 20px;"></div>
-                        <a href="#"> <strong>Google Scholar</strong> </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><!--/#business-stats-->
-    <section class="testimonial-area" id="testimonial">
-        <div class="container">
-            <div class="section-header">
-            <h2 class="section-title wow fadeInDown">CV and recommendations</h2>
-            <p class="wow fadeInDown">Here is my <a href="CV/Curriculum_Vitae.pdf">Curiculum Vitae</a>, please like it <br> Below are referrals/recommendations, currently there are none (sigh).</p>
-        </div>
-            <!-- <div class="row">
-                <div class="col-md-4">
-                    <div class="single-testimonial animate_fade_in" style="opacity: 1; right: 0px;">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <blockquote>Sontrary to popular belief, Lorem Ipsuis no simply random text. It has roots in a piece of classical Layears old. belief, Lorem Ipsuis not simply</blockquote>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-3">
-                                <img src="images/pic1.jpg" alt="client">
-                            </div>
-                            <div class="col-xs-9 half-gutter">
-                                <h5>John Bond</h5>
-                                <h6>Lorem Ipsuis simply</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="single-testimonial animate_fade_in" style="opacity: 1; right: 0px;">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <blockquote>Tontrary to popular belief, Lorem Ipsuis no simply random text. It has roots in a piece of classical Layears old. belief, Lorem Ipsuis not simply</blockquote>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-3">
-                                <img src="images/pic2.jpg" alt="client">
-                            </div>
-                            <div class="col-xs-9 half-gutter">
-                                <h5>John Bond</h5>
-                                <h6>Lorem Ipsuis simply</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="single-testimonial animate_fade_in" style="opacity: 1; right: 0px;">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <blockquote>Aontrary to popular belief, Lorem Ipsuis no simply random text. It has roots in a piece of classical Layears old. belief, Lorem Ipsuis not simply</blockquote>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-3">
-                                <img src="images/pic1.jpg" alt="client">
-                            </div>
-                            <div class="col-xs-9 half-gutter">
-                                <h5>John Bond</h5>
-                                <h6>Lorem Ipsuis simply</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-        </div>
-    </section>
-
-    <section id="our-team">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Courses covered</h2>
-                <p class="wow fadeInDown">All the courses that I have covered or am taking currently at <b> <a href="http://www.iitkgp.ac.in/">IIT Kharagpur</a> </b> <br> <b>"</b> indicates ongoing course. <br> <b>^</b> indicates course has lab component.</p>
-            </div>
-			
-			 	
-            <div class="row text-center">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
-                        <div class="team-img">
-                            <img class="img-responsive" src="images/team/math.jpg" alt="">
-                        </div>
-                        <div class="team-info">
-                            <h3>Math Courses</h3>
-                            <!-- <span></span>  -->
-                        </div> 
-                        <ul class="social-icons">
-                            Probability and Statistics, Discrete Structures, Stochastic Processes in Finance", Mathematics-1, Mathematics-2 
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
-                        <div class="team-img">
-                            <img class="img-responsive" src="images/team/CS_core.jpg" alt="">
-                        </div>
-                        <div class="team-info">
-                            <h3>Core CS</h3>
-                            <!-- <span>President</span>  -->
-                        </div> 
-                        <ul class="social-icons">
-                            Algorithms-1, Algorithms-2", Computer Organizaton and Architecture^", Compliers^"
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
-                        <div class="team-img">
-                            <img class="img-responsive" src="images/team/CS_applications.jpg" alt="">
-                        </div>
-                        <div class="team-info">
-                            <h3>CS application</h3>
-                            <!-- <span>Architect</span>  -->
-                        </div> 
-                        <ul class="social-icons">
-                            Machine Learning", Natural Language Processing, Programming and Data Structures^, Software Engineering^
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
-                        <div class="team-img">
-                            <img class="img-responsive" src="images/team/hardware.jpg" alt="">
-                        </div>
-                        <div class="team-info">
-                            <h3>Hardware</h3>
-                            <!-- <span>Manager</span>  -->
-                        </div> 
-                        <ul class="social-icons">
-                            Switching Circuits and Logic Design^, Signals and Networks^, Electronics^, Electric Technology^ 
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            </nav> -->
+            <!-- <div class="line"></div> -->
+            <section data-parallax="scroll" height="100px">       
+                <canvas id="c" height="300px"></canvas>
+              <script>
+                var ctr = 0;
+                var color = '#'+Math.floor(Math.random()*16777215).toString(16);
+                function draw(){
+                    if (ctr % 100 == 0) {
+                        color = '#'+Math.floor(Math.random()*16777215).toString(16);
+                    }
+                    // console.log(ctr);
+                    ctx.fillStyle="rgba(0, 0,0,0.05)",
+                    ctx.fillRect(0,0,c.width,c.height),
+                    // ctx.fillStyle="#F0F",
+                    ctx.fillStyle=color,
+                    ctr += 1;
+                    ctx.font=font_size+"px arial";
+                        for (var a=0;a<drops.length;a++) {
+                            var b=j[Math.floor(Math.random()*j.length)];
+                            ctx.fillText(b, a*font_size, drops[a]*font_size), 
+                            drops[a]*font_size > c.height && Math.random() > 0.975 && (drops[a]=0), 
+                            drops[a]++
+                        }
+                    }
+                    var c=document.getElementById("c"),
+                    ctx=c.getContext("2d");
+                    c.height=400, 
+                    c.width=1000;
+                    var j= "abcdefghijklmnopqrstuvwxyz1!2@3#4$5%6^7&8*9(0)";
+                    j = j.split("");
+                    for (var font_size=15, columns=c.width/font_size, drops=[], x=0; x<columns; x++)
+                        drops[x]=1;
+                        setInterval(draw, 33);
+              </script>
 
-        </div>
-    </section><!--/#our-team-->
-
-
-    <section id="contact-us">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Contact Me!</h2>
-                <p class="wow fadeInDown">Please hit me with feedback regarding my profile or any good ideas for a collaboration <br> In constant lookout for opportunities to grow.</p>
-            </div>
-        </div>
-    </section><!--/#contact-us-->
-
-
-    <section id="contact">
+                <ul class="home-social">
+                    <li>
+                        <a href="https://scholar.google.com/citations?user=wTTF4yYAAAAJ&hl=en"><i class="fa fa-facebook" aria-hidden="true"></i><span>Google Scholar</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i><span>Semantic Scholar</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i><span>Research Gate</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-behance" aria-hidden="true"></i><span>Github</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i><span>LinkedIn</span></a>
+                    </li>
+                </ul> 
+                <!-- end home-social -->
         
-        <div class="container">
-            <div class="container contact-info">
-                <div class="row">
-				  <div class="col-sm-4 col-md-4">
-                        <div class="contact-form">
-                            <h3>Contact Info</h3>
-
-                            <address>
-                              <a href="https://scholar.google.com/citations?user=wTTF4yYAAAAJ&hl=en"><i class="fa fa-google"></i><b> google scholar</b></a><br>
-                              <a href="https://www.facebook.com/atharva.naik.391"><i class="fa fa-facebook"></i><b>  facebook</b></a><br>
-                              <a href="https://twitter.com/Atharva93149016"><i class="fa fa-twitter"></i><b>  twitter</b></a><br>
-                              <a href="https://www.instagram.com/atharva_naik1729/?hl=en"><i class="fa fa-instagram"></i><b>  instagram</b></a><br>
-                              <a href="https://github.com/atharva-naik"><i class="fa fa-github"></i><b>  github</b></a><br>
-                              <a href="https://www.linkedin.com/in/atharva-naik-112888190/"><i class="fa fa-linkedin"></i><b>  linkedin</b></a><br>
-                              <!-- <abbr title="Phone">P:</abbr> (123) 456-7890 -->
-                            </address>
-					</div></div>
-                    <div class="col-sm-8 col-md-8">
-                        <div class="contact-form">
-                       
-                            <form id="main-contact-form" name="contact-form" method="post" action="#">
-                                <div class="form-group">
-                                    <input type="text" name="name" class="form-control" placeholder="Name" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" name="email" class="form-control" placeholder="Email" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="message" class="form-control" rows="8" placeholder="Message" required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Send Message</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>   
-   </section><!--/#bottom-->
-
-    <footer id="footer">
-        <div class="container">
+            </section>
+            
+            <h2 class="subheading">About Me</h2>
+            <img src="Atharva.jpeg" width="200px" class="textwrap"/>
+            <p>I am a final year undergraduate student at the department of Computer Science and Engineering at Indian Institute of Technology, Kharagpur (IIT KGP). I am currently interning remotely under the guidance of Dr. Nafise Moosavi and Dr. Gozde Gul Sahin of the Ubiquitous Knowledge Processing (UKP) lab at TU Darmstadt. In the past I have had the opportunity to work under the guidance of Prof. Lili Mou from the University of Alberta, Dr. Niyati Chhaya and Suryateja Bulusu from Adobe Research, India and Rajdeep Mukherjee a research scholar and PhD candidate at the Complex Networks Research Group at IIT KGP.</p>
             <div class="row">
-                <div class="col-sm-6">
-                    &copy; 2015 Company Name. Template by <a target="_blank" href="http://webthemez.com/" title="Free Bootstrap Themes and HTML Templates">WebThemez.com</a>
+                <div class="column">
+                    <img src="https://www.informatik.tu-darmstadt.de/media/ukp/logo/ukp_logo.png" alt="Snow" width="150px">
                 </div>
-                <div class="col-sm-6">
-                    <ul class="social-icons">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
-                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                        <li><a href="#"><i class="fa fa-github"></i></a></li>
-                    </ul>
+                <div class="column">
+                    <img src="https://pbs.twimg.com/profile_images/1379314280906956801/UkCS4mbP_400x400.jpg" alt="Snow" width="100px">
+                </div>
+                <div class="column">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4e/University_of_Alberta_seal.svg/1200px-University_of_Alberta_seal.svg.png"  alt="Snow" width="100px">
+                </div>
+                <div class="column">
+                    <img src="https://media-exp1.licdn.com/dms/image/C510BAQEzghGPQKm1_g/company-logo_200_200/0/1543812404084?e=1643241600&v=beta&t=dDuOH0kq7P7JB04-cWKaJBTuWd9g26ndbw_ZGkIEQfY"  alt="Snow" width="100px">
+                </div>
+                <div class="column">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/IIT_Kharagpur_Logo.svg/1200px-IIT_Kharagpur_Logo.svg.png" alt="Snow" width="100px">
                 </div>
             </div>
-        </div>
-    </footer><!--/#footer-->
+            <!-- <div class="line"></div> -->
 
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script> 
-    <script src="js/mousescroll.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/jquery.inview.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/custom-scripts.js"></script>
+            <h2 class="subheading">Research Interests</h2>
+            <p>My primary interests lie in the field of Natural Language Processing (NLP). In the field of NLP I am primarly interested in explaiable deep learning, bias and artefact detection, natural language inference (NLI), natural language generation and dialogue. 
+            </p>
+            <p>Till now I've had the opportunity to work on summarization, hate speech detection, headline generation, emotion detection, multi-lingual dialogue and bias/artefact detection. In my Adobe internship I had the unique opportunity of working on a project that lay in the intersection of human computer interaction, reinforcement learning and computer vision.</p>
+            <p>I wish to pursue NLP research as a masters (and potentially a PhD) student. My dream goal would be to successfully apply NLP towards creating intelligent assistants for creative writing, like screenwriting, storyboarding, comic book creation etc. and towards using social media to gather clues to locate missing people. I also wish to tackle these issues with explainable models that can justify their output. For e.g. a scriptwriting assistant, while suggesting an edit, should give a rational like, "this makes the main character more compelling and relatable". In case of a system to locate missng people, if the system suggests that the public interaction between two people is suspicious, then it should give probable cause which could be used by the investigating agency to subpoena the social media platform for additional details (like chatlogs or other private information). This would help investigators to filter out spurious leads and save time.
+            </p> 
+            <!-- <div class="line" class="subheading"></div> -->
+            <h3 class="subheading">Publications</h3>
+            <p>List of publications I have co-authored, including those that have been submitted to a conference and are currently under review.
+                <div class="material-div" onclick="location.href='https://arxiv.org/abs/2105.03983'">
+                    <img src="papers/VADEC.png" width="250px" class="textwrap"/>
+                    <h4 class="paper-title">Understanding the Role of Affect Dimensions in Detecting Emotions from Tweets: A Multi-task Approach (SIGIR 2021)</h4>
+                    <h6 class="authors">
+                        Rajdeep Mukherjee, Atharva Naik, Sriyash Poddar, Soham Dasgupta, Niloy Ganguly
+                    </h6>
+                    We propose VADEC, a multi-task framework that exploits the correlation between the categorical and dimensional models of emotion representation for better subjectivity analysis. Focusing primarily on the effective detection of emotions from tweets, we jointly train multi-label emotion classification and multi-dimensional emotion regression, thereby utilizing the inter-relatedness between the tasks. Co-training especially helps in improving the performance of the classification task as we outperform the strongest baselines with 3.4%, 11%, and 3.9% gains in Jaccard Accuracy, Macro-F1, and Micro-F1 scores respectively on the AIT dataset. We also achieve state-of-the-art results with 11.3% gains averaged over six different metrics on the SenWa...
+                </div>
+                <br>
+                <div class="material-div" onclick="location.href='https://arxiv.org/abs/2105.03983'">
+                    <img src="papers/VADEC.png" width="250px" class="textwrap"/>
+                    <h4 class="paper-title">Weakly Supervised Explainable Phrasal Reasoning with Neural Fuzzy Logic (Under Review)</h4>
+                    <h6 class="authors">
+                        Rajdeep Mukherjee, Atharva Naik, Sriyash Poddar, Soham Dasgupta, Niloy Ganguly
+                    </h6>
+                    We propose VADEC, a multi-task framework that exploits the correlation between the categorical and dimensional models of emotion representation for better subjectivity analysis. Focusing primarily on the effective detection of emotions from tweets, we jointly train multi-label emotion classification and multi-dimensional emotion regression, thereby utilizing the inter-relatedness between the tasks. Co-training especially helps in improving the performance of the classification task as we outperform the strongest baselines with 3.4%, 11%, and 3.9% gains in Jaccard Accuracy, Macro-F1, and Micro-F1 scores respectively on the AIT dataset. We also achieve state-of-the-art results with 11.3% gains averaged over six different metrics on the SenWa...
+                </div>
+            </p>
+
+            <h3 class="subheading">Projects</h3>
+                <details style="color: #fff" align="center">
+                    <h4>My Github Statistics</h4>
+                    <img alt="My Github Stats" src="https://github-readme-stats.vercel.app/api?username=atharva-naik&show_icons=true&hide_border=true&theme=tokyonight&count_private=true" />
+                </details>
+            <p>
+            I am an open source enthusiast. I love Python, and have worked on a wide variety of projects using Python. I have experience with Deep learning frameworks like PyTorch, tensorflow, sklearn etc., NLP toolkits like NLTK, spacy and gensim. 
+            <br>
+            I also have extensive experience with web scraping and automation using beautiful soup and selenium
+            <br>
+            I have basic web development proficiency using Flask, Django, javascript, SQLite, PostgreSQL. 
+            <br>
+            I love to tinker with tkinter (pun intended <img src="wink.png" width="20px"/>)) and GUI programming in PyQt5. I like building UI tools that are useful to me using PyQt5, in my free time.
+            I am also proficient in C, C++ and bash scripting. I have also worked with the CUDA API/extension of C++ in the past. I have some basic understanding of Apache Spark programming with scala.
+            </p>
+
+            <h3 class="subheading">Hobbies and Interests</h3>
+            <p>I absolutely love Anime, True Crime, Script Writing and learning new languages 
+            
+            </p>
+
+            <!-- <h3 class="subheading">Hobbies and Interests</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+        
+
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="plugins.js"></script>
+    <script src="modernizr.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
 </body>
+
 </html>
