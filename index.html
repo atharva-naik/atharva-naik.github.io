@@ -21,7 +21,6 @@
       integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
       crossorigin="anonymous"
     />
-
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
@@ -299,7 +298,10 @@
                     </a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a href="#">IIT KGP</a>
+                            <a href="#">UKP</a>
+                        </li>
+                        <li>
+                            <a href="#">UoA</a>
                         </li>
                         <li>
                             <a href="#">Adobe</a>
@@ -307,37 +309,49 @@
                         <li>
                             <a href="#">CNERG</a>
                         </li>
+                        <li>
+                            <a href="#">IIT KGP</a>
+                        </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#research">
                         <i class="fas fa-briefcase"></i>
                         Research
                     </a>
                     <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                         <i class="fas fa-copy"></i>
-                        Projects
+                        Papers
                     </a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
-                            <a href="#">Page 1</a>
+                            <a href="#paper1">VADEC</a>
                         </li>
                         <li>
-                            <a href="#">Page 2</a>
+                            <a href="#paper2">EPR</a>
                         </li>
                         <li>
-                            <a href="#">Page 3</a>
+                            <a href="#paper3">SMI</a>
+                        </li>
+                        <li>
+                            <a href="#paper4">CollabColor</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#projects">
                         <i class="fas fa-image"></i>
-                        Papers
+                        Projects
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#hobbies">
+                        <i class="fas fa-paper-plane"></i>
+                        Hobbies
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
                         <i class="fas fa-paper-plane"></i>
                         Contact
                     </a>
@@ -462,7 +476,7 @@
             </div>
             <!-- <div class="line"></div> -->
 
-            <h2 class="subheading">Research Interests</h2>
+            <h2 class="subheading" id="research">Research Interests</h2>
             <p>My primary interests lie in the field of Natural Language Processing (NLP). In the field of NLP I am primarly interested in explaiable deep learning, bias and artefact detection, natural language inference (NLI), natural language generation and dialogue. 
             </p>
             <p>Till now I've had the opportunity to work on summarization, hate speech detection, headline generation, emotion detection, multi-lingual dialogue and bias/artefact detection. In my Adobe internship I had the unique opportunity of working on a project that lay in the intersection of human computer interaction, reinforcement learning and computer vision.</p>
@@ -471,7 +485,7 @@
             <!-- <div class="line" class="subheading"></div> -->
             <h3 class="subheading">Publications</h3>
             <p>List of publications I have co-authored, including those that have been submitted to a conference and are currently under review.
-                <div class="material-div" onclick="location.href='https://arxiv.org/abs/2105.03983'">
+                <div id="paper1" class="material-div" onclick="location.href='https://arxiv.org/abs/2105.03983'">
                     <img src="papers/VADEC.png" width="250px" class="textwrap"/>
                     <h4 class="paper-title">Understanding the Role of Affect Dimensions in Detecting Emotions from Tweets: A Multi-task Approach (SIGIR 2021)</h4>
                     <h6 class="authors">
@@ -480,7 +494,7 @@
                     We propose VADEC, a multi-task framework that exploits the correlation between the categorical and dimensional models of emotion representation for better subjectivity analysis. Focusing primarily on the effective detection of emotions from tweets, we jointly train multi-label emotion classification and multi-dimensional emotion regression, thereby utilizing the inter-relatedness between the tasks. Co-training especially helps in improving the performance of the classification task as we outperform the strongest baselines with 3.4%, 11%, and 3.9% gains in Jaccard Accuracy, Macro-F1, and Micro-F1 scores respectively on the AIT dataset. We also achieve state-of-the-art results with 11.3% gains averaged over six different metrics on the SenWa...
                 </div>
                 <br>
-                <div class="material-div" onclick="location.href='https://arxiv.org/pdf/2109.08927.pdf'">
+                <div id="paper2" class="material-div" onclick="location.href='https://arxiv.org/pdf/2109.08927.pdf'">
                     <img src="papers/EPR.png" width="250px" class="textwrap"/>
                     <h4 class="paper-title">Weakly Supervised Explainable Phrasal Reasoning with Neural Fuzzy Logic (Under Review)</h4>
                     <h6 class="authors">
@@ -489,7 +503,7 @@
                     Natural language inference (NLI) aims to determine the logical relationship between two sentences among the target labels Entailment, Contradiction, and Neutral. In recent years, deep learning models have become a prevailing approach to NLI, but they lack interpretability and explainability. In this work, we address the explainability for NLI by weakly supervised logical reasoning, and propose an Explainable Phrasal Reasoning (EPR) approach. Our model first detects phrases as the semantic unit and aligns corresponding phrases. Then, the model predicts the NLI label for the aligned phrases, and induces the sentence label by fuzzy logic formulas. Our EPR is almost everywhere differentiable and thus the system can be trained end-to-end in a weakly supervised manner. We annotated a corpus and developed a set of metrics to evaluate phrasal reasoning. Results show that our EPR yields much more meaningful explanations in terms of F scores than previous studies. To the best of our knowledge, we are the first to develop a weakly...
                 </div>
                 <br>
-                <div class="material-div" onclick="location.href='#'">
+                <div id="paper3" class="material-div" onclick="location.href='#'">
                     <img src="papers/SMI.png" width="250px" class="textwrap"/>
                     <h4 class="paper-title">Representation Learning for Conversational Data using Discourse Mutual Information Maximization (Under Review)</h4>
                     <h6 class="authors">
@@ -498,7 +512,7 @@
                     Current methods for pretraining natural language representations typically ignore any information available through the discourse level structures in a text. Such structures may have important information, useful specifically for dialog understanding, discourse segmentation and many other domain specific tasks. To capture such features at the pretraining stage itself, we propose an information theoretic objective for learning discourse level features. Through an extensive experimental study, we show that representations learned using the proposed objectives has better understanding of full dialog contexts than existing methods. Additionally, our models show strong performance in utterance level dialog understanding tasks like Intent Detection or Act classification. These proposed mutual information based objectives are very effective learners. Small scale...
                 </div>
                 <br>
-                <div class="material-div" onclick="location.href='#'">
+                <div id="paper4" class="material-div" onclick="location.href='#'">
                     <img src="papers/CollabColor.png" width="250px" class="textwrap"/>
                     <h4 class="paper-title">CollabColor: Creative Support System for Human-Human Synchronous Collaboration (Under Review)</h4>
                     <h6 class="authors">
@@ -514,7 +528,7 @@
                 </div>
             </p>
 
-            <h3 class="subheading">Projects</h3>
+            <h3 class="subheading" id="projects">Projects</h3>
                 <details style="color: #fff" align="center">
                     <h4>My Github Statistics</h4>
                     <img alt="My Github Stats" src="https://github-readme-stats.vercel.app/api?username=atharva-naik&show_icons=true&hide_border=true&theme=tokyonight&count_private=true" />
@@ -616,16 +630,30 @@
                     <img src="tools/spark.svg" alt="Snow" width="130px">
                 </div>
             </div>
-            <h3 class="subheading">Hobbies and Interests</h3>
+            <h3 class="subheading" id="hobbies">Hobbies and Interests</h3>
             <p>I absolutely love Anime, True Crime, Script Writing and learning new languages 
             </p>
-
-            <!-- <h3 class="subheading">Hobbies and Interests</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
-        
-
+            <!-- <form id="contact-form" style="color: #fff">
+                <input type="hidden" name="contact_number">
+                <label>Name</label>
+                <input type="text" name="user_name">
+                <br>
+                <label>Email</label>
+                <input type="email" name="user_email">
+                <br>
+                <label>Message</label>
+                <textarea name="message"></textarea>
+                <input type="submit" value="Send">
+            </form> -->
+            <h3 class="subheading" id="contact">Get in touch with me</h3>
+            <p>Click the button below to open the contact form. This 'contact' form is just a colorlib template that I stole and the emailing mechanism is email.js. Don't judge me ok!</p>
+            <div style="text-align: center">
+                <button type="button" class="btn btn-info" onclick="location.href='contact/index.html'">
+                    <i class="fas fa-align-center"></i>
+                    <span>Contact</span>
+                </button>
+            </div>
     </div>
-
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Popper.JS -->
