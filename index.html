@@ -92,7 +92,7 @@
             background-color: gray;
         }
         *::-webkit-scrollbar-thumb:hover {
-            background-color: orange;
+            background-color: #6d7fcc
         }
         *::-webkit-scrollbar-corner {
             background-color: transparent;
@@ -106,7 +106,7 @@
         * ## home social 
         * ------------------------------------------------------------------- */
         .home-social {
-            font-family: "montserrat-regular", sans-serif;
+            font-family: "Poppins", sans-serif;
             list-style: none;
             margin: 0;
             position: absolute;
@@ -130,34 +130,38 @@
 
         .home-social li a {
             display: block;
-            width: 33px;
-            height: 33px;
+            width: 50px;
+            height: 50px;
         }
 
         .home-social i, .home-social span {
             position: absolute;
             top: 0;
-            line-height: 33px;
+            line-height: 20px;
             -webkit-transition: all 0.5s ease-in-out;
             transition: all 0.5s ease-in-out;
         }
 
+        .home-social i:hover {
+            background-color: #6d7fcc
+        }
+
         .home-social i {
-            font-size: 14px;
+            font-size: 28px;
             right: 0;
             text-align: center;
             display: inline-block;
-            width: 33px;
-            height: 33px;
-            line-height: calc(33px - 4px);
+            width: 50px;
+            height: 50px;
+            line-height: calc(50px - 4px);
             border: 2px solid #FFFFFF;
             border-radius: 50%;
         }
 
         .home-social span {
-            color: #39b54a;
+            color: #6d7fcc;
             right: 4.5rem;
-            font-size: 1.3rem;
+            font-size: 1rem;
             opacity: 0;
             visibility: hidden;
             -webkit-transform: scale(0);
@@ -436,22 +440,25 @@
 
                 <ul class="home-social">
                     <li>
-                        <a href="https://scholar.google.com/citations?user=wTTF4yYAAAAJ&hl=en"><i class="ai ai-google-scholar-square ai-3x" aria-hidden="true"></i><span>Google Scholar</span></a>
+                        <a href="https://scholar.google.com/citations?user=wTTF4yYAAAAJ&hl=en"><i class="ai ai-google-scholar" aria-hidden="true"></i><span>Google Scholar</span></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i><span>Semantic Scholar</span></a>
+                        <a href="https://www.semanticscholar.org/author/Atharva-Naik/2064353087"><i class="ai ai-semantic-scholar" aria-hidden="true"></i><span>Semantic Scholar</span></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i><span>Arxiv</span></a>
+                        <a href="#"><i class="ai ai-arxiv" aria-hidden="true"></i><span>Arxiv</span></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i><span>Research Gate</span></a>
+                        <a href="https://www.researchgate.net/profile/Atharva_Naik"><i class="ai ai-researchgate" aria-hidden="true"></i><span>Research Gate</span></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-behance" aria-hidden="true"></i><span>Github</span></a>
+                        <a href="#"><i class="ai ai-orcid" aria-hidden="true"></i><span>OrcID</span></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i><span>LinkedIn</span></a>
+                        <a href="http://github.com/atharva-naik"><i class="fab fa-github" aria-hidden="true"></i><span>Github</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/atharva-naik-112888190/"><i class="fab fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
                     </li>
                 </ul> 
                 <!-- end home-social -->
