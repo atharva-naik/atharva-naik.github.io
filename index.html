@@ -51,6 +51,32 @@
         clear: both;
         display: table;
         }
+        /* Three image containers (use 25% for four, and 50% for two, etc) */
+        .column1 {
+        float: left;
+        width: 10%;
+        padding: 5px;
+        }
+
+        /* Clear floats after image containers */
+        .row1::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+        /* Three image containers (use 25% for four, and 50% for two, etc) */
+        .column2 {
+        float: left;
+        width: 16%;
+        padding: 5px;
+        }
+
+        /* Clear floats after image containers */
+        .row2::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
         /* Chrome, safari */
         *::-webkit-scrollbar {
             width: 10px;
@@ -449,7 +475,7 @@
                     <img src="papers/VADEC.png" width="250px" class="textwrap"/>
                     <h4 class="paper-title">Understanding the Role of Affect Dimensions in Detecting Emotions from Tweets: A Multi-task Approach (SIGIR 2021)</h4>
                     <h6 class="authors">
-                        Rajdeep Mukherjee, Atharva Naik, Sriyash Poddar, Soham Dasgupta, Niloy Ganguly
+                        Rajdeep Mukherjee, <span style="font-weight: bold; color: violet">Atharva Naik</span>, Sriyash Poddar, Soham Dasgupta, Niloy Ganguly
                     </h6>
                     We propose VADEC, a multi-task framework that exploits the correlation between the categorical and dimensional models of emotion representation for better subjectivity analysis. Focusing primarily on the effective detection of emotions from tweets, we jointly train multi-label emotion classification and multi-dimensional emotion regression, thereby utilizing the inter-relatedness between the tasks. Co-training especially helps in improving the performance of the classification task as we outperform the strongest baselines with 3.4%, 11%, and 3.9% gains in Jaccard Accuracy, Macro-F1, and Micro-F1 scores respectively on the AIT dataset. We also achieve state-of-the-art results with 11.3% gains averaged over six different metrics on the SenWa...
                 </div>
@@ -458,7 +484,7 @@
                     <img src="papers/EPR.png" width="250px" class="textwrap"/>
                     <h4 class="paper-title">Weakly Supervised Explainable Phrasal Reasoning with Neural Fuzzy Logic (Under Review)</h4>
                     <h6 class="authors">
-                        Zijun Wu, Atharva Naik, Zi Xuan Zhang, Lili Mou
+                        Zijun Wu, <span style="font-weight: bold; color: violet">Atharva Naik</span>, Zi Xuan Zhang, Lili Mou
                     </h6>
                     Natural language inference (NLI) aims to determine the logical relationship between two sentences among the target labels Entailment, Contradiction, and Neutral. In recent years, deep learning models have become a prevailing approach to NLI, but they lack interpretability and explainability. In this work, we address the explainability for NLI by weakly supervised logical reasoning, and propose an Explainable Phrasal Reasoning (EPR) approach. Our model first detects phrases as the semantic unit and aligns corresponding phrases. Then, the model predicts the NLI label for the aligned phrases, and induces the sentence label by fuzzy logic formulas. Our EPR is almost everywhere differentiable and thus the system can be trained end-to-end in a weakly supervised manner. We annotated a corpus and developed a set of metrics to evaluate phrasal reasoning. Results show that our EPR yields much more meaningful explanations in terms of F scores than previous studies. To the best of our knowledge, we are the first to develop a weakly...
                 </div>
@@ -467,7 +493,7 @@
                     <img src="papers/SMI.png" width="250px" class="textwrap"/>
                     <h4 class="paper-title">Representation Learning for Conversational Data using Discourse Mutual Information Maximization (Under Review)</h4>
                     <h6 class="authors">
-                        Bishal Santra, Sumegh Roychowdhury, Aishik Mondal, Vasu G, Atharva Naik, Manish Gupta, Pawan Goyal 
+                        Bishal Santra, Sumegh Roychowdhury, Aishik Mondal, Vasu Garg, <span style="font-weight: bold; color: violet">Atharva Naik</span>, Manish Gupta, Pawan Goyal 
                     </h6>
                     Current methods for pretraining natural language representations typically ignore any information available through the discourse level structures in a text. Such structures may have important information, useful specifically for dialog understanding, discourse segmentation and many other domain specific tasks. To capture such features at the pretraining stage itself, we propose an information theoretic objective for learning discourse level features. Through an extensive experimental study, we show that representations learned using the proposed objectives has better understanding of full dialog contexts than existing methods. Additionally, our models show strong performance in utterance level dialog understanding tasks like Intent Detection or Act classification. These proposed mutual information based objectives are very effective learners. Small scale...
                 </div>
@@ -476,7 +502,7 @@
                     <img src="papers/CollabColor.png" width="250px" class="textwrap"/>
                     <h4 class="paper-title">CollabColor: Creative Support System for Human-Human Synchronous Collaboration (Under Review)</h4>
                     <h6 class="authors">
-                        Suryateja BV, Atharva Naik, Yash Parag Butala, Jeet Patel, Sristy Sharma, Niyati Chhaya
+                        Suryateja BV, <span style="font-weight: bold; color: violet">Atharva Naik</span>, Yash Parag Butala, Jeet Patel, Sristy Sharma, Niyati Chhaya
                     </h6>
                     Humans are unique in working collaboratively by sharing and understanding intentions. However, digital collaboration is daunting,
                     especially in creative design life cycles, due to non-linear workflows and lack of micro-alignments coupled with the need for robust
@@ -494,19 +520,104 @@
                     <img alt="My Github Stats" src="https://github-readme-stats.vercel.app/api?username=atharva-naik&show_icons=true&hide_border=true&theme=tokyonight&count_private=true" />
                 </details>
             <p>
-            I am an open source enthusiast. I love Python, and have worked on a wide variety of projects using Python. I have experience with Deep learning frameworks like PyTorch, tensorflow, sklearn etc., NLP toolkits like NLTK, spacy and gensim. 
-            <br>
+            I am an open source enthusiast. I love Python, and have worked on a wide variety of projects using Python. I have experience with Deep learning frameworks like PyTorch, tensorflow, keras, sklearn etc., NLP toolkits like NLTK, spacy and gensim and data science and scientific computing tools like pandas, jupyter, numpy and scipy. 
+            </p>
+            <div class="row1">
+                <div class="column1">
+                    <img src="tools/pytorch.png" alt="Snow" width="100px">
+                </div>
+                <div class="column1">
+                    <img src="tools/tensorflow-tf.svg"  alt="Snow" width="100px">
+                </div>
+                <div class="column1">
+                    <img src="tools/keras.svg"  alt="Snow" width="100px">
+                </div>
+                <div class="column1">
+                    <img src="tools/scikit-learn.png"  alt="Snow" width="100px">
+                </div>
+                <div class="column1">
+                    <img src="tools/nltk.png"  alt="Snow" width="100px">
+                </div>
+                <div class="column1">
+                    <img src="tools/spacy.svg"  alt="Snow" width="100px">
+                </div>
+                <div class="column1">
+                    <img src="tools/gensim.png"  alt="Snow" width="100px">
+                </div>
+                <div class="column1">
+                    <img src="tools/pandas.svg"  alt="Snow" width="100px">
+                </div>
+                <div class="column1">
+                    <img src="tools/jupyter.png"  alt="Snow" width="100px">
+                </div>
+                <div class="column1">
+                    <img src="tools/numpy.svg"  alt="Snow" width="100px">
+                </div>
+            </div>
+            <p>
             I also have extensive experience with web scraping and automation using beautiful soup and selenium
             <br>
             I have basic web development proficiency using Flask, Django, javascript, SQLite, PostgreSQL. 
             <br>
             I love to tinker with tkinter (pun intended <img src="wink.png" width="20px"/>)) and GUI programming in PyQt5. I like building UI tools that are useful to me using PyQt5, in my free time.
-            I am also proficient in C, C++ and bash scripting. I have also worked with the CUDA API/extension of C++ in the past. I have some basic understanding of Apache Spark programming with scala.
+            <div class="row1">
+                <div class="column1">
+                    <img src="tools/selenium.png"  alt="Snow" width="100px">
+                </div>
+                <div class="column1">
+                    <img src="tools/flask.svg"  alt="Snow" width="100px">
+                </div>
+                <div class="column1">
+                    <img src="tools/django.svg"  alt="Snow" width="100px">
+                </div>
+                <div class="column1">
+                    <img src="tools/javascript.png"  alt="Snow" width="100px">
+                </div>
+                <div class="column1">
+                    <img src="tools/html.svg"  alt="Snow" width="100px">
+                </div>
+                <div class="column1">
+                    <img src="tools/css.svg"  alt="Snow" width="90px">
+                </div>
+                <div class="column1">
+                    <img src="tools/sqlite.svg"  alt="Snow" width="100px">
+                </div>
+                <div class="column1">
+                    <img src="tools/postgresql.png"  alt="Snow" width="100px">
+                </div>
+                <div class="column1">
+                    <img src="tools/tkinter.png"  alt="Snow" width="90px">
+                </div>
+                <div class="column1">
+                    <img src="tools/qt.png"  alt="Snow" width="90px">
+                </div>
+            </div>
             </p>
-
+            <p>
+                I am also proficient in C, C++ and bash scripting. I have also worked with the CUDA API/extension of C++ in the past. I have some basic understanding of Apache Spark programming with scala.
+            </p>
+            <div class="row2">
+                <div class="column2">
+                    <img src="tools/c.svg" alt="Snow" width="100px">
+                </div>
+                <div class="column2">
+                    <img src="tools/cpp.svg" alt="Snow" width="100px">
+                </div>
+                <div class="column2">
+                    <img src="tools/bash.svg"  alt="Snow" width="100px">
+                </div>
+                <div class="column2">
+                    <img src="tools/cu.png"  alt="Snow" width="130px">
+                </div>
+                <div class="column2">
+                    <img src="tools/scala.png" alt="Snow" width="80px">
+                </div>
+                <div class="column2">
+                    <img src="tools/spark.svg" alt="Snow" width="130px">
+                </div>
+            </div>
             <h3 class="subheading">Hobbies and Interests</h3>
             <p>I absolutely love Anime, True Crime, Script Writing and learning new languages 
-            
             </p>
 
             <!-- <h3 class="subheading">Hobbies and Interests</h3>
