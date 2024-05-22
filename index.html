@@ -1,702 +1,490 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
+	<head>
+		<title>Atharva Naik</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="academicons.min.css">
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-    <title>Atharva's Portfolio </title>
 
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="base.css"> -->
-    <!-- <link rel="stylesheet" href="main.css"> -->
-    <link rel="stylesheet" href="vendor.css">
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
-      crossorigin="anonymous"
-    />
-    <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.15/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.15/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-laptop"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Atharva Naik</h1>
+								<p> 
+									Language Technologies PhD Student  @
+									<a href="https://www.cs.cmu.edu/">Carnegie Mellon University</a>
+									<br>
+								</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro">Intro</a></li>
+								<li><a href="#work">Work</a></li>
+								<li><a href="#contact">Contact</a></li>
+								<!-- <li><a href="#blog">Art</a></li> -->
+							</ul>
+						</nav>
+						<div>
+							<ul class="icons">
+									<li><a href="https://x.com/Atharva93149016" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.linkedin.com/in/atharva-naik-112888190/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/atharva-naik" class="icon fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://scholar.google.com/citations?user=wTTF4yYAAAAJ&hl=en"><i class="ai ai-google-scholar" aria-hidden="true"></i></a></li>
+									<li><a href="https://www.semanticscholar.org/author/Atharva-Naik/2064353087"><i class="ai ai-semantic-scholar" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+						Credits to <a href="https://ldery.github.io/">Lucio Dery</a> for the template!
+					</header>
+					
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="academicons.min.css">
-    <style>
-        .subheading {
-            color: #6d7fcc;
-            text-shadow: 0 0 3px #abb5e0, 0 0 1px #abb5e0, 0 0 40px; 
-        }
-        .textwrap {
-            float: left;
-            margin-right: 20px;
-        }
-        /* Three image containers (use 25% for four, and 50% for two, etc) */
-        .column {
-        float: left;
-        width: 20%;
-        padding: 5px;
-        }
+									<!-- Main -->
+					<div id="main">
+						<article id="intro">
+							<h2 class="major">Intro</h2>
+							<p><span class="image main"><img style="max-height: 450px; object-fit: cover;" src="images/sis_wedding.png" alt="" /></span></p>
+							<p>
+								I am Atharva Naik a former MLT and an incoming PhD student advised by Prof. Carolyn Rose at the Language Technologies Institute at Carnegie Mellon University. My research interests lie around using Large Language Models (LLMs) for various Programming and Software Engineering tasks like code generation, summarization, translation, and review. I am also interested in creating user interfaces to support programmers and programming students, especially in collaborative scenarios. Currently, I am working on using LLMs to evaluate the helpfulness of code reviews and using code generation capabilities of LLMs for automated phonological reasoning. In the past, I have published work on data augmentation for code translation, using curriculum learning to improve generalization in code search, and using LLMs to provide support to students for reflection-based learning in collaborative programming activities.
+								<!-- I am a PhD student in the Computer Science Department at Carnegie Mellon University co-advised by Ameet Talwalkar and Graham Neubig. Before starting my PhD, I was a Research Engineer at Facebook AI Research (FAIR) in Seattle.  My current research interests broadly cover all things related to learning from multiple tasks: transfer learning, meta-learning, multi-tasking and auxiliary learning. I primarily explore these fields in the context of Natural Language Processing but the tools I develop are domain agnostic.  
+								I have previously worked in Computer Vision (CV) - specifically CV algorithms for High Energy Physics (HEP) and Video Understanding. I did my undergrad (Physics) and Masters (Computer Science) at Stanford University. 
+								Outside of A.I, I am very passionate about Reading, Music, Art, Neuroscience, Philosophy and Food !!.  -->
+								<br>
+							</p>
+							<!-- <h3 class="major">2024 Book List</h3>
+							<ul>
+								<li>How not to be wrong - Jordan Ellenberg</li>
+								
+							</ul>
+							<h4 class="major"> In Progress </h3>
+							<ul>
+								<li>Algorithms to live by - Brian Christian, Thomas L. Griffiths</li>
+							</ul>
+							<h3 class="major">2023 Book List</h3>
+							<ul>
+								<li>The Alchemist - Paulo Coelho</li>
+								<li>Ikigai - Hector Garcia and Francesc Miralles </li>
+								<li>Thinking Fast and Slow - Daniel Kahneman </li>
+								<li>Stories of Your Life and Others - Ted Chiang </li>
+							</ul>
+							<h3 class="major">2022 Book List</h3>
+							<ul>
+								<li>The Path of Daggers - WOT Series - Robert Jordan</li>
+								<li>The Hard Thing about Hard Things - Ben Horowitz</li>
+								<li>The Everything Store - Brad Stone</li>
+								<li>The Alignment Problem - Brian Christian </li>
+								<li>Poorly Understood: What America gets wrong about poverty - Heather E. Bullock et Al</li>
+								<li>Race After Technology - Ruha Benjamin</li>
+								<li>The Graveyard Book - Neil Gaiman</li>
+								<li>Dreams of a Final Theory - Steven Weinberg </li>
+								<li>Chaos - James Gleick </li>
+								<li>Existential Physics - Sabine Hossenfelder</li>
+								<li>The Selfish Gene - Richard Dawkins</li>
 
-        /* Clear floats after image containers */
-        .row::after {
-        content: "";
-        clear: both;
-        display: table;
-        }
-        /* Three image containers (use 25% for four, and 50% for two, etc) */
-        .column1 {
-        float: left;
-        width: 10%;
-        padding: 5px;
-        }
+							</ul>
+							<h3 class="major">2021 Book List</h3>
+							<ul>
+								<li>The Sandman Act I & II - Neil Gaiman</li>
+								<li>A Crown of Swords - WOT Series - Robert Jordan</li>
+								<li>Intimations - Zadie Smith</li>
+								<li>Project Hail Mary - Andy Weir</li>
+								<li>Hold Everything Dear - John Berger</li>
+								<li>Guns, Germs and Steel - Jared Diamond</li>
+								<li>Hyperbole and Half - Allie Brosh</li>
+								<li>Ministry For The Future - Kim Stanley Robinson </>
+							</ul>
+							<h3 class="major">2020 Book List</h3>
+							<p>
+								<ul>
+									<li>The Stranger - Albert Camus</li>
+									<li>Awards for good boys - Shelby Lorman </li>
+									<li>The Game - Neil Strauss </li>
+									<li>Predictably Irrational - Daniel Ariely </li>
+									<li>The Genealogy of Morals - Friedrich Nietzsche</li>
+									<li>The Three-Body Problem - Cixin Liu </li>
+									<li>Atomic Habits - James Clear </li>
+									<li>Modern Ethics in 77 Arguments : A Stone Reader </li>
+									<li>Dune - Frank Herbert </li>
+								</ul>
+							</p>
+							<h3 class="major">2019 Book List</h3>
+							<p>
+								<ul>
+									<li>Man Search For Meaning - Viktor Frankl </li>
+									<li>Reductionism in Art and Brain Science - Eric R. Kandel </li>
+									<li>The Myth of Sisyphus - Albert Camus </li>
+									<li>Logic Comix - Apostolos Doxiadis, Christos Papadimitriou </li>
+									<li>The New Jim Crow - Michelle Alexander</li>
+									<li>The Fifth Season - N.K. Jemisin </li>
+									<li>Deep Work - Cal Newport</li>
+									<li>The Riddle Master Series [3 Books] - Patricia McKillip</li>
+									<li>His Dark Materials [3 Books] - Phillip Pullman</li>
+									<li>The Upward Spiral - Alex Korb</li>
+									<li>Portraits of Resilience - Daniel Jackson</li>
+								</ul>
+							</p> -->
+						</article>
 
-        /* Clear floats after image containers */
-        .row1::after {
-        content: "";
-        clear: both;
-        display: table;
-        }
-        /* Three image containers (use 25% for four, and 50% for two, etc) */
-        .column2 {
-        float: left;
-        width: 16%;
-        padding: 5px;
-        }
+						<!-- Work -->
+						<article id="work">
+							<p>
+								<h3><a href="https://atharva-naik.github.io/cvs/Research_CV_PhD_Applications.pdf">Full CV</a></h3>
+							</p>
+							<p>
+								<h3 id="-education">
+									<i class="icon fa-chevon-right"></i>
+									Education
+								</h3>
+								<table class="table table-hover">
+									<tbody>
+										<tr>
+											<td class="col-md-3">Aug 2024 (incoming)</td>
+											<td>
+												<strong>PhD in Language Technologies </strong>
+												<br> Carnegie Mellon University
+											</td>
+										</tr>
+										<tr>
+											<td class="col-md-3">Aug 2022 - May 2024</td>
+											<td>
+												<strong>Masters in Language Technologies</strong>
+												<br> Carnegie Mellon University
+												<br> <strong>GPA:</strong> 4.08/4
+											</td>
+										</tr>
+										<tr>
+											<td class="col-md-3">July 2018 - May 2022</td>
+											<td>
+												<strong>Bachelor of Technology, Computer Science and Engineering</strong>
+												<br> Indian Institute of Technology, Kharagpur
+												<br> <strong>GPA:</strong> 9.66/10
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</p>
+							<p>
+								<h3 id="-experience">
+									<i class="icon fa-chevon-right"></i>
+									Experience
+								</h3>
+								<table class="table table-hover">
+									<tbody>
+										<tr>
+											<td class="col-md-3">Jan 2023 - May 2024</td>
+											<td>
+												<strong>Research Assistant</strong>, Carnegie Mellon University
+											</td>
+										</tr>
+										<tr>
+											<td class="col-md-3">Aug 2021 - Dec 2021</td>
+											<td>
+												<strong>Research Assistant Intern</strong>, Technische Universität Darmstadt
+											</td>
+										</tr>
+										<tr>
+											<td class="col-md-3">Apr 2021 - Sep 2021</td>
+											<td>
+												<strong>Research Assistant Intern</strong>, University of Alberta
+											</td>
+										</tr>
+										<tr>
+											<td class="col-md-3">May 2021 - Aug 2021</td>
+											<td>
+												<strong>Research Intern</strong>, Adobe, Bangalore
+											</td>
+										</tr>
+										<tr>
+											<td class="col-md-3">Feb 2019 - Mar 2020</td>
+											<td>
+												<strong>Undergraduate Student Researcher</strong>, Autonomous Ground Vehicle Research Group, IIT Kharagpur
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</p>
 
-        /* Clear floats after image containers */
-        .row2::after {
-        content: "";
-        clear: both;
-        display: table;
-        }
-        /* Chrome, safari */
-        *::-webkit-scrollbar {
-            width: 10px;
-            height: 10px;
-        }    
-        *::-webkit-scrollbar-track {
-            background-color: rgba(235, 235, 235, 0);
-        }
-        *::-webkit-scrollbar-track:hover {
-            background-color: rgba(235, 235, 235, 0.1);
-        }
-        *::-webkit-scrollbar-thumb {
-            background-color: gray;
-        }
-        *::-webkit-scrollbar-thumb:hover {
-            background-color: #6d7fcc
-        }
-        *::-webkit-scrollbar-corner {
-            background-color: transparent;
-            /* background: rgba(235, 235, 235, 0.1); */
-        }
-        /* Firefox */
-        /* .selector {
-            scrollbar-width: none;
-        } */
-        /* ------------------------------------------------------------------- 
-        * ## home social 
-        * ------------------------------------------------------------------- */
-        .home-social {
-            font-family: "Poppins", sans-serif;
-            list-style: none;
-            margin: 0;
-            position: absolute;
-            top: 50%;
-            right: 5.4rem;
-            -webkit-transform: translate3d(0, -50%, 0);
-            -ms-transform: translate3d(0, -50%, 0);
-            transform: translate3d(0, -50%, 0);
-        }
+							<p>
+								<h3 id="2024-publications">
+									<i class="icon fa-chevon-right"></i>
+									2024
+								</h3>
 
-        .home-social a {
-            color: white;
-            -webkit-transition: all 0.5s ease-in-out;
-            transition: all 0.5s ease-in-out;
-        }
+								<table class="table table-hover">
+									<tbody>
+										<tr>
+											<td>
+												<a href="https://arxiv.org/abs/2405.01580">
+													<strong>On the Limitations of Embedding Based Methods for Measuring Functional Correctness for Code Generation</strong>
+												</a>												
+												<br> <strong>Atharva Naik</strong>
+												<br> Arxiv
+												<!-- <img  style='object-fit: contain; max-width: 500px; max-height: auto;' class="image fit" src="papers/reflection_trigger.png" alt=""/> -->
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="https://arxiv.org/pdf/2404.18262">
+													<strong>Generating Situated Reflection Triggers about Alternative Solution Paths: A Case Study of Generative AI for Computer-Supported Collaborative Learning</strong>
+												</a>												
+												<br> <strong>Atharva Naik</strong>, Jessica Ruhan Yin, Anusha Kamath, Qianou Ma, Sherry Tongshuang Wu, Charles Murray, Christopher Bogart, Majd Sakr, Carolyn P. Rose
+												<br> AIED (2024)
+												<img  style='object-fit: contain; max-width: 500px; max-height: auto;' class="image fit" src="papers/reflection_trigger.png" alt=""/>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="https://aclanthology.org/2024.lrec-main.1462.pdf">
+													<strong>Tricking LLMs into Disobedience: Understanding, Analyzing, and Preventing Jailbreaks</strong>
+												</a>												
+												<br> Abhinav Rao, <strong>Atharva Naik*</strong> Sachin Vashistha*, Somak Aditya, Monojit Choudhury
+												<br> LREC-COLLING (2024): 16802-16830
+												<img  style='object-fit: contain; max-width: 300px; max-height: auto;' class="image fit" src="papers/TrickLLM.png" alt=""/>
+												(* - indicates equal contribution)
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="https://ojs.aaai.org/index.php/AAAI/article/download/30486/32608">
+													<strong>SkillCLIP: Skill Aware Modality Fusion Visual Question Answering (Student Abstract)</strong>
+												</a>												
+												<br> <strong>Atharva Naik</strong>, Yash Parag Butala, Navaneethan Vaikunthan, Raghav Kapoor
+												<br> AAAI Student Abstracts (2024): 23592-23593
+												<img  style='object-fit: contain; max-width: 300px; max-height: auto;' class="image fit" src="papers/SkillCLIP.png" alt=""/>
+												(* - indicates equal contribution)
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<h3 id="2023-publications">
+									<i class="icon fa-chevon-right"></i>
+									2023
+								</h3>
+								<table class="table table-hover">
+									<tbody>
+										<tr>
+											<td>
+												<a href="https://aclanthology.org/2023.findings-emnlp.917.pdf">
+													<strong>Data Augmentation for Code Translation with Comparable Corpora and Multiple References</strong>
+												</a>												
+												<br> Yiqing Xie, <strong>Atharva Naik</strong>, Daniel Fried, Carolyn Rose
+												<br> EMNLP (2023) Findings
+												<img  style='object-fit: contain; max-width: 400px; max-height: auto;' class="image fit" src="papers/CMTrans.png" alt=""/>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="https://aclanthology.org/2023.ijcnlp-main.7.pdf">
+													<strong>SYNC: A Structurally guided Hard Negative Curriculum for Generalizable Neural Code Search</strong>
+												</a>												
+												<br> <strong>Atharva Naik</strong>, Soumitra Das, Jyothi Vedurada, Somak Aditya
+												<br> AACL (2023)
+												<img  style='object-fit: contain; max-width: 400px; max-height: auto;' class="image fit" src="papers/SYNC.png" alt=""/>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="https://arxiv.org/pdf/2109.08927">
+													<strong>Weakly Supervised Explainable Phrasal Reasoning with Neural Fuzzy Logic</strong>
+												</a>												
+												<br> Zijun Wu, Zi Xuan Zhang, <strong>Atharva Naik</strong>, Zhijian Mei, Mauajama Firdaus, Lili Mou
+												<br> ICLR (2023)
+												<img  style='object-fit: contain; max-width: 400px; max-height: auto;' class="image fit" src="papers/EPR.png" alt=""/>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								</table>
+								<h3 id="2022-publications">
+									<i class="icon fa-chevon-right"></i>
+									2022
+								</h3>
+								<table class="table table-hover">
+									<tbody>
+										<tr>
+											<td>
+												<a href="https://aclanthology.org/2022.naacl-main.124.pdf">
+													<strong>Super-NaturalInstructions: Generalization via declarative instructions on 1600+ nlp tasks</strong>
+												</a>												
+												<br> Yizhong Wang, Swaroop Mishra, Pegah Alipoormolabashi, Yeganeh Kordi, Amirreza Mirzaei, Anjana Arunkumar, Arjun Ashok, Arut Selvan Dhanasekaran, <strong>Atharva Naik</strong>, ... , Chitta Baral, Yejin Choi, Noah A. Smith, Hannaneh Hajishirzi, Daniel Khashabi
+												<br> NAACL (2022): 1718–1734
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="https://aclanthology.org/2022.naacl-main.124.pdf">
+													<strong>Representation Learning for Conversational Data using Discourse Mutual Information Maximization</strong>
+												</a>												
+												<br> Bishal Santra, Sumegh Roychowdhury, Aishik Mandal, Vasu Gurram, <strong>Atharva Naik</strong>, Manish Gupta, Pawan Goyal
+												<br> NAACL (2022): 1718–1734
+												<img  style='object-fit: contain; max-width: 400px; max-height: auto;' class="image fit" src="papers/SMI.png" alt=""/>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="https://scholar.archive.org/work/fwrfmx2ahjeyvfe5mtv5sbb2ta/access/wayback/https://dl.acm.org/doi/pdf/10.1145/3491101.3519789">
+													<strong>Towards Enabling Synchronous Digital Creative Collaboration: Codifying Conflicts in Co-Coloring</strong>
+													
+												</a>
+												<br> Suryateja BV, Jeet Patel, <strong>Atharva Naik</strong>, Yash Parag Butala, Sristy Sharma, Niyati Chhaya 
+												<br> CHI Extended Abstracts (2022/4/27): 1-7
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<h3 id="2021-publications">
+									<i class="icon fa-chevon-right"></i>
+									2021
+								</h3>
+								<table class="table table-hover">
+									<tbody>
+										<tr>
+											<td>
+												<a href="https://arxiv.org/pdf/2105.03983">
+													<strong>Understanding the role of affect dimensions in detecting emotions from tweets: a multi-task approach</strong>
+												</a>
+												<br> Rajdeep Mukherjee, <strong>Atharva Naik</strong>, Sriyash Poddar, Soham Dasgupta, Niloy Ganguly 
+												<br> ACM SIGIR (2021): 2303-2307
+												<img  style='object-fit: contain; max-width: 400px; max-height: auto;' class="image fit" src="papers/VADEC.png" alt=""/>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</p>
 
-        .home-social li {
-            position: relative;
-            padding: .9rem 0;
-        }
+							<!-- <p>
+								<h3 id="-teaching">
+									<i class="icon fa-chevon-right"></i>
+									Teaching
+								</h3>
+								<table class="table table-hover">
+									<tbody>
+										<tr>
+											<td class="col-md-3">Fall 2023</td>
+											<td>
+												<strong>Teaching Assistant, Machine learning with large datasets (10-605)</strong> Carnegie Mellon University
+											</td>
+										</tr>
+										<tr>
+											<td class="col-md-3">Fall 2022</td>
+											<td>
+												<strong>Teaching Assistant, Advanced Natural Language Processing (11-711)</strong> Carnegie Mellon University
+											</td>
+										</tr>
+										<tr>
+											<td class="col-md-3">Winter 2018</td>
+											<td>
+												<strong>Head Teaching Assistant, Deep Learning (CS230)</strong> Stanford University
+											</td>
+										</tr>
+										<tr>
+											<td class="col-md-3">Spring 2018</td>
+											<td>
+												<strong>Course Assistant, Deep Learning (CS230)</strong> Stanford University
+											</td>
+										</tr>
+										<tr>
+											<td class="col-md-3">Fall 2017</td>
+											<td>
+												<strong>Course Assistant, Machine Learning (CS229)</strong> Stanford University
+											</td>
+										</tr>
+										<tr>
+											<td class="col-md-3">Winter 2014 - Spring 2017</td>
+											<td>
+												<strong>Section Leader, Programming Abstactions (CS106A)</strong> Stanford University
+											</td>
+										</tr>
+										<tr>
+											<td class="col-md-3">Winter 2014 - Spring 2017</td>
+											<td>
+												<strong>Section Leader, Programming Methodology (CS106B) </strong> Stanford University
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</p> -->
+						</article>
 
-        .home-social li a {
-            display: block;
-            width: 50px;
-            height: 50px;
-        }
+						<!-- Contact -->
+						<article id="contact">
+							<h3> Email : </h3>
+							<p>arnaik [at] andrew [dot] cmu [dot] edu</p>
+							<!-- <h2 class="major">Contact</h2>
+							<form method="post" action="#">
+								<div class="field half first">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field half">
+									<label for="email">Email</label>
+									<input type="text" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="4"></textarea>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" class="special" /></li>
+									<li><input type="reset" value="Reset" /></li>
+								</ul>
+							</form> -->
+						</article>
+						<!-- <article id="blog">
+							Working on getting better at drawing and painting ! I hope I find the time. Here's some random artwork I've made in the past
+							<p>
+								<h3>Art</h3>
+								<div class="row"> 
+								  <div class="column">
+								    <img src="images/pencil1.jpg">
+								    <img src="images/pencil2.jpg">
+								    <img src="images/pencil3.jpg">
+								   								    
+								  </div>
+								  <div class="column">
+								    <img src="images/charcoal1.jpg">
+								    <img src="images/charcoal2.jpg">
+								    <img src="images/charcoal3.jpg">
+								   	<img src="images/pencil4.jpg">					  	
+								  </div> 
+								  <div class="column">
+								    <img src="images/paint1.jpg">	
+								    <img src="images/pencil6.jpg">
+								    <img src="images/pencil5.jpg">
+								  </div>
+								</div>
+							</p>
+						</article> -->
+					</div>
 
-        .home-social i, .home-social span {
-            position: absolute;
-            top: 0;
-            line-height: 20px;
-            -webkit-transition: all 0.5s ease-in-out;
-            transition: all 0.5s ease-in-out;
-        }
+			</div>
 
-        .home-social i:hover {
-            background-color: #6d7fcc
-        }
+		<!-- BG -->
+			<div id="bg">
+			</div>
 
-        .home-social i {
-            font-size: 28px;
-            right: 0;
-            text-align: center;
-            display: inline-block;
-            width: 50px;
-            height: 50px;
-            line-height: calc(50px - 4px);
-            border: 2px solid #FFFFFF;
-            border-radius: 50%;
-        }
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-        .home-social span {
-            color: #6d7fcc;
-            right: 4.5rem;
-            font-size: 1rem;
-            opacity: 0;
-            visibility: hidden;
-            -webkit-transform: scale(0);
-            -ms-transform: scale(0);
-            transform: scale(0);
-            -webkit-transform-origin: 100% 50%;
-            -ms-transform-origin: 100% 50%;
-            transform-origin: 100% 50%;
-        }
-
-        .home-social li:hover span {
-            opacity: 1;
-            visibility: visible;
-            -webkit-transform: scale(1);
-            -ms-transform: scale(1);
-            transform: scale(1);
-        }
-        @media only screen and (max-width: 700px) {
-            .home-content__main {
-                max-width: 490px;
-            }
-            .home-content__buttons {
-                padding-top: 1.2rem;
-                text-align: center;
-            }
-            .home-content__buttons .btn {
-                display: block;
-                width: 70%;
-                margin: 1.5rem 0 0 0;
-            }
-            .home-social {
-                right: 4rem;
-            }
-            .home-content__scroll {
-                right: 7.5rem;
-            }
-            .home-content__line {
-                right: 5.5rem;
-            }
-        }
-        @media only screen and (max-width: 600px) {
-            .home-content h1 {
-                font-size: 3.8rem;
-            }
-            .home-social {
-                right: 2rem;
-            }
-            .home-social li {
-                padding: .6rem 0;
-            }
-            .home-social i {
-                font-size: 17px;
-                border: none;
-            }
-            .home-social span {
-                display: none;
-            }
-            .home-content__scroll {
-                bottom: 5.4rem;
-            }
-            .home-content__line {
-                height: 7.2rem;
-            }
-        }
-        @media only screen and (max-width: 500px) {
-            .s-home {
-                min-height: 642px;
-            }
-            .home-content h1 {
-                font-size: 3.5rem;
-            }
-            .home-content__main {
-                text-align: center;
-                max-width: none;
-                padding-top: 15rem;
-                padding-right: 25px;
-                width: 85%;
-            }
-            .home-content__buttons {
-                padding-top: 1.2rem;
-            }
-            .home-content__buttons .btn {
-                width: auto;
-                margin: 1.5rem 0 0 0;
-            }
-            .home-social {
-                display: none;
-            }
-        }
-        .material-div {
-            color: #fff;
-            background-color: #484848;
-            padding: 15px;
-            font-size: 13px;
-            /* white-space: nowrap; */
-            overflow: hidden;
-            height: 250px;
-            text-overflow: ellipsis;
-        }
-        .material-div:hover {
-            color: #fff;
-            background: rgb(64,118,184);
-            background: radial-gradient(circle, rgba(64,118,184,1) 25%, rgba(53,184,182,1) 91%);
-            /* margin-bottom: 5px; */
-            /* margin-right: 5px; */
-        }
-        /* .authors {
-            background-image: url('authors-div.png');
-            margin: 5px;
-        } */
-        .material-div.paper-title {
-            color: #fff;
-            background-color: #484848;
-            padding: 10px;
-            font-size: 13px;
-        }
-        .material-div.paper-title:hover {
-            color: #484848;
-        }
-    </style>
-</head>
-
-<body style="background-color: #292929;">
-    <div style="text-align: center; padding-top: 10px; padding-bottom: 2px; background-image: url('authors-div.png'); background-position: center; background-size: cover; font-family: 'Titillium Web'; font-weight: bold; color: #fff">
-        <h3 style="font-size: 35px">Hi it's Atharva <img src="waving-emoji.png" width="35px"/> Here's what I do</h3>
-    </div>
-    <div class="wrapper">
-        <!-- Sidebar  -->
-        <nav id="sidebar" style="background-image: url('bg_texture2.png')">
-            <div class="sidebar-header" style="background-image: url('bg_texture2.png')">
-                <h3 style="font-size: 23px;">Navigation</h3>
-                <strong>NP</strong>
-            </div>
-            <ul class="list-unstyled components" style="font-size: 15px;">
-                <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        <i class="fas fa-user"></i>
-                        About
-                    </a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="#">UKP</a>
-                        </li>
-                        <li>
-                            <a href="#">UoA</a>
-                        </li>
-                        <li>
-                            <a href="#">Adobe</a>
-                        </li>
-                        <li>
-                            <a href="#">CNERG</a>
-                        </li>
-                        <li>
-                            <a href="#">IIT KGP</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#cvSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        <i class="fas fa-file-contract"></i>
-                        CV
-                    </a>
-                    <ul class="collapse list-unstyled" id="cvSubmenu">
-                        <li>
-                            <a href="cvs/ResearchCV.pdf">Research</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#research">
-                        <i class="fas fa-briefcase"></i>
-                        Research
-                    </a>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        <i class="fas fa-copy"></i>
-                        Papers
-                    </a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="#paper1">VADEC</a>
-                        </li>
-                        <li>
-                            <a href="#paper2">EPR</a>
-                        </li>
-                        <li>
-                            <a href="#paper3">SMI</a>
-                        </li>
-                        <li>
-                            <a href="#paper4" style="overflow: hidden;">CollabColor</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#projects">
-                        <i class="fas fa-project-diagram"></i>
-                        Projects
-                    </a>
-                </li>
-                <li>
-                    <a href="#hobbies">
-                        <i class="fas fa-hiking"></i>
-                        Hobbies
-                    </a>
-                </li>
-                <li>
-                    <a href="#contact">
-                        <i class="fas fa-paper-plane"></i>
-                        Contact
-                    </a>
-                </li>
-            </ul>
-
-            <!-- <ul class="list-unstyled CTAs">
-                <li>
-                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
-                </li>
-                <li>
-                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
-                </li>
-            </ul> -->
-        </nav>
-        <!-- Page Content  -->
-        <div id="content">
-            <button type="button" id="sidebarCollapse" class="btn btn-info">
-                <i class="fas fa-align-left"></i>
-                <span>Collapse</span>
-            </button>
-            <button type="button" onClick="location.href='cvs/Atharva_CV_Nov15.pdf'" class="btn btn-warning">
-                <i class="fas fa-file-contract"></i>
-                <span>CV</span>
-            </button>
-            <br><br>
-            <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid" style="background-color: #292929">
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" style="color: #fff" href="#">Page</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" style="color: #fff" href="#">Page</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" style="color: #fff" href="#">Page</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" style="color: #fff" href="#">Page</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav> -->
-            <!-- <div class="line"></div> -->
-            <section data-parallax="scroll" height="100px">       
-                <canvas id="c" height="300px"></canvas>
-              <script>
-                var ctr = 0;
-                var color = '#'+Math.floor(Math.random()*16777215).toString(16);
-                function draw(){
-                    if (ctr % 100 == 0) {
-                        color = '#'+Math.floor(Math.random()*16777215).toString(16);
-                    }
-                    // console.log(ctr);
-                    ctx.fillStyle="rgba(0, 0,0,0.05)",
-                    ctx.fillRect(0,0,c.width,c.height),
-                    // ctx.fillStyle="#F0F",
-                    ctx.fillStyle=color,
-                    ctr += 1;
-                    ctx.font=font_size+"px arial";
-                        for (var a=0;a<drops.length;a++) {
-                            var b=j[Math.floor(Math.random()*j.length)];
-                            ctx.fillText(b, a*font_size, drops[a]*font_size), 
-                            drops[a]*font_size > c.height && Math.random() > 0.975 && (drops[a]=0), 
-                            drops[a]++
-                        }
-                    }
-                    var c=document.getElementById("c"),
-                    ctx=c.getContext("2d");
-                    c.height=400, 
-                    c.width=1000;
-                    var j= "abcdefghijklmnopqrstuvwxyz1!2@3#4$5%6^7&8*9(0)";
-                    j = j.split("");
-                    for (var font_size=15, columns=c.width/font_size, drops=[], x=0; x<columns; x++)
-                        drops[x]=1;
-                        setInterval(draw, 33);
-              </script>
-
-                <ul class="home-social">
-                    <li>
-                        <a href="https://scholar.google.com/citations?user=wTTF4yYAAAAJ&hl=en"><i class="ai ai-google-scholar" aria-hidden="true"></i><span>Google Scholar</span></a>
-                    </li>
-                    <li>
-                        <a href="https://www.semanticscholar.org/author/Atharva-Naik/2064353087"><i class="ai ai-semantic-scholar" aria-hidden="true"></i><span>Semantic Scholar</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="ai ai-arxiv" aria-hidden="true"></i><span>Arxiv</span></a>
-                    </li>
-                    <li>
-                        <a href="https://www.researchgate.net/profile/Atharva_Naik"><i class="ai ai-researchgate" aria-hidden="true"></i><span>Research Gate</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="ai ai-orcid" aria-hidden="true"></i><span>OrcID</span></a>
-                    </li>
-                    <li>
-                        <a href="http://github.com/atharva-naik"><i class="fab fa-github" aria-hidden="true"></i><span>Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/atharva-naik-112888190/"><i class="fab fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
-                    </li>
-                </ul> 
-                <!-- end home-social -->
-        
-            </section>
-            
-            <h2 class="subheading">About Me</h2>
-            <img src="Atharva.jpeg" width="200px" class="textwrap"/>
-            <p>I am a final year undergraduate student at the department of Computer Science and Engineering at Indian Institute of Technology, Kharagpur (IIT KGP). I am currently interning remotely under the guidance of Dr. Nafise Moosavi and Dr. Gozde Gul Sahin of the Ubiquitous Knowledge Processing (UKP) lab at TU Darmstadt. In the past I have had the opportunity to work under the guidance of Prof. Lili Mou from the University of Alberta, Dr. Niyati Chhaya and Suryateja Bulusu from Adobe Research, India and Rajdeep Mukherjee a research scholar and PhD candidate at the Complex Networks Research Group at IIT KGP.</p>
-            <div class="row">
-                <div class="column">
-                    <img src="https://www.informatik.tu-darmstadt.de/media/ukp/logo/ukp_logo.png" alt="Snow" width="150px">
-                </div>
-                <div class="column">
-                    <img src="https://pbs.twimg.com/profile_images/1379314280906956801/UkCS4mbP_400x400.jpg" alt="Snow" width="100px">
-                </div>
-                <div class="column">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4e/University_of_Alberta_seal.svg/1200px-University_of_Alberta_seal.svg.png"  alt="Snow" width="100px">
-                </div>
-                <div class="column">
-                    <img src="https://media-exp1.licdn.com/dms/image/C510BAQEzghGPQKm1_g/company-logo_200_200/0/1543812404084?e=1643241600&v=beta&t=dDuOH0kq7P7JB04-cWKaJBTuWd9g26ndbw_ZGkIEQfY"  alt="Snow" width="100px">
-                </div>
-                <div class="column">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/IIT_Kharagpur_Logo.svg/1200px-IIT_Kharagpur_Logo.svg.png" alt="Snow" width="100px">
-                </div>
-            </div>
-            <!-- <div class="line"></div> -->
-
-            <h2 class="subheading" id="research">Research Interests</h2>
-            <p>My primary interests lie in the field of Natural Language Processing (NLP). In the field of NLP I am primarly interested in explaiable deep learning, bias and artefact detection, natural language inference (NLI), natural language generation and dialogue. 
-            </p>
-            <p>Till now I've had the opportunity to work on summarization, hate speech detection, headline generation, emotion detection, multi-lingual dialogue and bias/artefact detection. In my Adobe internship I had the unique opportunity of working on a project that lay in the intersection of human computer interaction, reinforcement learning and computer vision.</p>
-            <p>I wish to pursue NLP research as a masters (and potentially a PhD) student. My dream goal would be to successfully apply NLP towards creating intelligent assistants for creative writing, like screenwriting, storyboarding, comic book creation etc. and towards using social media to gather clues to locate missing people. I also wish to tackle these issues with explainable models that can justify their output. For e.g. a scriptwriting assistant, while suggesting an edit, should give a rationale like, "this makes the main character more compelling and relatable". In case of a system to locate missng people, if the system suggests that the public interaction between two people is suspicious, then it should give probable cause which could be used by the investigating agency to subpoena the social media platform for additional details (like chatlogs or other private information). This would help investigators to filter out spurious leads and save time.
-            </p> 
-            <!-- <div class="line" class="subheading"></div> -->
-            <h3 class="subheading">Publications</h3>
-            <p>List of publications I have co-authored, including those that have been submitted to a conference and are currently under review.
-                <div id="paper1" class="material-div" onclick="location.href='https://arxiv.org/abs/2105.03983'">
-                    <img src="papers/VADEC.png" width="250px" class="textwrap"/>
-                    <h4 class="paper-title">Understanding the Role of Affect Dimensions in Detecting Emotions from Tweets: A Multi-task Approach (SIGIR 2021)</h4>
-                    <h6 class="authors">
-                        Rajdeep Mukherjee, <span style="font-weight: bold; color: violet">Atharva Naik</span>, Sriyash Poddar, Soham Dasgupta, Niloy Ganguly
-                    </h6>
-                    We propose VADEC, a multi-task framework that exploits the correlation between the categorical and dimensional models of emotion representation for better subjectivity analysis. Focusing primarily on the effective detection of emotions from tweets, we jointly train multi-label emotion classification and multi-dimensional emotion regression, thereby utilizing the inter-relatedness between the tasks. Co-training especially helps in improving the performance of the classification task as we outperform the strongest baselines with 3.4%, 11%, and 3.9% gains in Jaccard Accuracy, Macro-F1, and Micro-F1 scores respectively on the AIT dataset. We also achieve state-of-the-art results with 11.3% gains averaged over six different metrics on the SenWa...
-                </div>
-                <br>
-                <div id="paper2" class="material-div" onclick="location.href='https://arxiv.org/pdf/2109.08927.pdf'">
-                    <img src="papers/EPR.png" width="250px" class="textwrap"/>
-                    <h4 class="paper-title">Weakly Supervised Explainable Phrasal Reasoning with Neural Fuzzy Logic (Under Review)</h4>
-                    <h6 class="authors">
-                        Zijun Wu, <span style="font-weight: bold; color: violet">Atharva Naik</span>, Zi Xuan Zhang, Lili Mou
-                    </h6>
-                    Natural language inference (NLI) aims to determine the logical relationship between two sentences among the target labels Entailment, Contradiction, and Neutral. In recent years, deep learning models have become a prevailing approach to NLI, but they lack interpretability and explainability. In this work, we address the explainability for NLI by weakly supervised logical reasoning, and propose an Explainable Phrasal Reasoning (EPR) approach. Our model first detects phrases as the semantic unit and aligns corresponding phrases. Then, the model predicts the NLI label for the aligned phrases, and induces the sentence label by fuzzy logic formulas. Our EPR is almost everywhere differentiable and thus the system can be trained end-to-end in a weakly supervised manner. We annotated a corpus and developed a set of metrics to evaluate phrasal reasoning. Results show that our EPR yields much more meaningful explanations in terms of F scores than previous studies. To the best of our knowledge, we are the first to develop a weakly...
-                </div>
-                <br>
-                <div id="paper3" class="material-div" onclick="location.href='#'">
-                    <img src="papers/SMI.png" width="250px" class="textwrap"/>
-                    <h4 class="paper-title">Representation Learning for Conversational Data using Discourse Mutual Information Maximization (Under Review)</h4>
-                    <h6 class="authors">
-                        Bishal Santra, Sumegh Roychowdhury, Aishik Mandal, Vasu Gurram, <span style="font-weight: bold; color: violet">Atharva Naik</span>, Manish Gupta, Pawan Goyal 
-                    </h6>
-                    Current methods for pretraining natural language representations typically ignore any information available through the discourse level structures in a text. Such structures may have important information, useful specifically for dialog understanding, discourse segmentation and many other domain specific tasks. To capture such features at the pretraining stage itself, we propose an information theoretic objective for learning discourse level features. Through an extensive experimental study, we show that representations learned using the proposed objectives has better understanding of full dialog contexts than existing methods. Additionally, our models show strong performance in utterance level dialog understanding tasks like Intent Detection or Act classification. These proposed mutual information based objectives are very effective learners. Small scale...
-                </div>
-                <br>
-                <div id="paper4" class="material-div" onclick="location.href='#'">
-                    <img src="papers/CollabColor.png" width="250px" class="textwrap"/>
-                    <h4 class="paper-title">CollabColor: Creative Support System for Human-Human Synchronous Collaboration (Under Review)</h4>
-                    <h6 class="authors">
-                        Suryateja BV, <span style="font-weight: bold; color: violet">Atharva Naik</span>, Yash Parag Butala, Jeet Patel, Sristy Sharma, Niyati Chhaya
-                    </h6>
-                    Humans are unique in working collaboratively by sharing and understanding intentions. However, digital collaboration is daunting,
-                    especially in creative design life cycles, due to non-linear workflows and lack of micro-alignments coupled with the need for robust
-                    network connectivity. We present a formative study with creatives to identify key themes in conflicts that arise in this space. We
-                    introduce CollabColor, an intelligent system that aids in resolving conflicts for two users synchronously collaborating on a low-touch
-                    creative task. More specifically, given an uncolored line-art on a canvas and a set of reference images from the users as input, we
-                    provide non-obtrusive interventions during their real-time collaboration to ensure that the final colorization of the art is coherent,
-                    and all the users’ aligned preferences are...
-                </div>
-            </p>
-
-            <h3 class="subheading" id="projects">Projects</h3>
-                <details style="color: #fff" align="center">
-                    <h4>My Github Statistics</h4>
-                    <img alt="My Github Stats" src="https://github-readme-stats.vercel.app/api?username=atharva-naik&show_icons=true&hide_border=true&theme=tokyonight&count_private=true" />
-                </details>
-            <p>
-            I am an open source enthusiast. I love Python, and have worked on a wide variety of projects using Python. I have experience with Deep learning frameworks like PyTorch, tensorflow, keras, sklearn etc., NLP toolkits like NLTK, spacy and gensim and data science and scientific computing tools like pandas, jupyter, numpy and scipy. 
-            </p>
-            <div class="row1">
-                <div class="column1">
-                    <img src="tools/pytorch.png" alt="Snow" width="100px">
-                </div>
-                <div class="column1">
-                    <img src="tools/tensorflow-tf.svg"  alt="Snow" width="100px">
-                </div>
-                <div class="column1">
-                    <img src="tools/keras.svg"  alt="Snow" width="100px">
-                </div>
-                <div class="column1">
-                    <img src="tools/scikit-learn.png"  alt="Snow" width="100px">
-                </div>
-                <div class="column1">
-                    <img src="tools/nltk.png"  alt="Snow" width="100px">
-                </div>
-                <div class="column1">
-                    <img src="tools/spacy.svg"  alt="Snow" width="100px">
-                </div>
-                <div class="column1">
-                    <img src="tools/gensim.png"  alt="Snow" width="100px">
-                </div>
-                <div class="column1">
-                    <img src="tools/pandas.svg"  alt="Snow" width="100px">
-                </div>
-                <div class="column1">
-                    <img src="tools/jupyter.png"  alt="Snow" width="100px">
-                </div>
-                <div class="column1">
-                    <img src="tools/numpy.svg"  alt="Snow" width="100px">
-                </div>
-            </div>
-            <p>
-            I also have extensive experience with web scraping and automation using beautiful soup and selenium
-            <br>
-            I have basic web development proficiency using Flask, Django, javascript, SQLite, PostgreSQL. 
-            <br>
-            I love to tinker with tkinter (pun intended <img src="wink.png" width="20px"/>)) and GUI programming in PyQt5. I like building UI tools that are useful to me using PyQt5, in my free time.
-            <div class="row1">
-                <div class="column1">
-                    <img src="tools/selenium.png"  alt="Snow" width="100px">
-                </div>
-                <div class="column1">
-                    <img src="tools/flask.svg"  alt="Snow" width="100px">
-                </div>
-                <div class="column1">
-                    <img src="tools/django.svg"  alt="Snow" width="100px">
-                </div>
-                <div class="column1">
-                    <img src="tools/javascript.png"  alt="Snow" width="100px">
-                </div>
-                <div class="column1">
-                    <img src="tools/html.svg"  alt="Snow" width="100px">
-                </div>
-                <div class="column1">
-                    <img src="tools/css.svg"  alt="Snow" width="90px">
-                </div>
-                <div class="column1">
-                    <img src="tools/sqlite.svg"  alt="Snow" width="100px">
-                </div>
-                <div class="column1">
-                    <img src="tools/postgresql.png"  alt="Snow" width="100px">
-                </div>
-                <div class="column1">
-                    <img src="tools/tkinter.png"  alt="Snow" width="90px">
-                </div>
-                <div class="column1">
-                    <img src="tools/qt.png"  alt="Snow" width="90px">
-                </div>
-            </div>
-            </p>
-            <p>
-                I am also proficient in C, C++ and bash scripting. I have also worked with the CUDA API/extension of C++ in the past. I have some basic understanding of Apache Spark programming with scala.
-            </p>
-            <div class="row2">
-                <div class="column2">
-                    <img src="tools/c.svg" alt="Snow" width="100px">
-                </div>
-                <div class="column2">
-                    <img src="tools/cpp.svg" alt="Snow" width="100px">
-                </div>
-                <div class="column2">
-                    <img src="tools/bash.svg"  alt="Snow" width="100px">
-                </div>
-                <div class="column2">
-                    <img src="tools/cu.png"  alt="Snow" width="130px">
-                </div>
-                <div class="column2">
-                    <img src="tools/scala.png" alt="Snow" width="80px">
-                </div>
-                <div class="column2">
-                    <img src="tools/spark.svg" alt="Snow" width="130px">
-                </div>
-            </div>
-            <h3 class="subheading" id="hobbies">Hobbies and Interests</h3>
-            <p>I absolutely love Anime, True Crime, Script Writing and learning new languages 
-            </p>
-            <!-- <form id="contact-form" style="color: #fff">
-                <input type="hidden" name="contact_number">
-                <label>Name</label>
-                <input type="text" name="user_name">
-                <br>
-                <label>Email</label>
-                <input type="email" name="user_email">
-                <br>
-                <label>Message</label>
-                <textarea name="message"></textarea>
-                <input type="submit" value="Send">
-            </form> -->
-            <h3 class="subheading" id="contact">Get in touch with me</h3>
-            <p>Click the button below to open the contact form. This 'contact' form is just a colorlib template that I stole and the emailing mechanism is email.js. Don't judge me ok!</p>
-            <div style="text-align: center">
-                <button type="button" class="btn btn-info" onclick="location.href='contact/index.html'">
-                    <i class="fas fa-align-center"></i>
-                    <span>Contact</span>
-                </button>
-            </div>
-    </div>
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
-    <script src="plugins.js"></script>
-    <script src="modernizr.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-            });
-        });
-    </script>
-</body>
-
+	</body>
 </html>
