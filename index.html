@@ -62,18 +62,23 @@
 							<h2 class="major">Intro</h2>
 							<p><span class="image main"><img style="max-height: 450px; object-fit: cover;" src="images/sis_wedding.png" alt="" /></span></p>
 							<p>
-								I am Atharva Naik, a second-year PhD student (and former MLT) advised by Prof. Carolyn Rose at the Language Technologies Institute (LTI), Carnegie Mellon University (CMU). 
-								I also collaborate closely with Prof. Daniel Fried and Prof. David Mortensen. 
-								My research focuses on synthetic data generation and post-training/self-improvement methods for enhancing LLM-generated code quality, reasoning, and code safety/alignment.
-								<br> <br>
-								I recently completed <a href="https://arxiv.org/abs/2507.11687">MetaLint</a>, a project on training LLMs to flag non-idiomatic Python and Java code while adapting to evolving best practices by framing the task as instruction following and leveraging preference tuning. 
-								Part of this work was conducted during my summer 2025 internship at Oracle Labs.
-								I also developed <a href="https://arxiv.org/abs/2505.23126">PBEBench</a>, a dynamic, contamination-free, and scalable synthetic benchmark for evaluating knowledge-free inductive reasoning through multi-step string rewrites.
-								<br> <br>
-								Previously, I worked on <a href="https://aclanthology.org/2025.naacl-long.457.pdf">CRScore</a> (NAACL 2025, Oral), a reference-free metric for evaluating code review comments using LLMs and static analysis by generating code quality rubrics and scoring them with embedding models across key dimensions. I also conducted an <a href="https://aclanthology.org/2025.acl-long.1432/">investigative study</a> (ACL 2025, Oral, top 10%) framing sound law induction as programming by example and analyzing which synthetic data distributions yield the best downstream performance on low-resource tasks.
-								<br> <br>
-								I also led the CMU team to the finals of the <a href="https://www.amazon.science/nova-ai-challenge">Amazon Nova AI Challenge</a> in 2025, training LLMs to generate secure code by combining GRPO with deliberative alignment (chain-of-thought reasoning) and static analyzers such as AWS CodeGuru, Bandit, and CodeQL to produce useful, safe, and CWE-free code.
-								I’ve also explored using LLMs to generate reflection questions in collaborative SQL programming activities to support peer learning. Our <a href="https://dl.acm.org/doi/10.1007/978-3-031-64302-6_4">first study</a> was accepted at AIED 2024 and received Best Paper and Best Student Paper nominations, and our <a href="https://bera-journals.onlinelibrary.wiley.com/doi/10.1111/bjet.13548">follow-up study</a> was accepted in the British Journal of Educational Technology (BJET), a high-impact educational technology journal.
+								I am Atharva Naik, a PhD student advised by Prof. Carolyn Rose at the Language Technologies Institute (LTI), Carnegie Mellon University (CMU).
+								I also collaborate closely with Prof. Daniel Fried and Prof. David Mortensen.
+								My research focuses on <b>easy-to-hard generalization for LLM agents</b>. I study how to improve agent capabilities through controllable-difficulty synthetic data generation, post-training with verifiable or meta-level supervision, and inference-time optimization. I apply these methods to coding agents for code quality (code review, linting, refactoring), data science agents (e.g., Kaggle-style challenges), and computational linguistics (e.g., forward reconstruction).
+								<br><br>
+
+								This summer I'm interning with the Copilot Tuning Team at Microsoft, where I am exploring how to improve the performance of coding agents for hard data science tasks using process reward models to provide feedback at inference time.
+								Recently, I developed <a href="https://arxiv.org/abs/2605.05485">ReaComp</a>, a framework that compiles LLM reasoning traces into reusable symbolic solvers, enabling coding agents to bypass LLM calls at inference time to reduce cost while improving performance in a hybrid solver-first, LLM-fallback setting, particularly on hard problems.
+								<br><br>
+
+								I also developed <a href="https://arxiv.org/abs/2507.11687">MetaLint</a> (COLM 2026), which reframes code linting as instruction following over natural-language best-practice specifications, enabling easy-to-hard generalization. Part of this work was conducted during my Summer 2025 internship at Oracle Labs. In addition, I created <a href="https://arxiv.org/abs/2505.23126">PBEBench</a> (ACL Findings 2026), a dynamic, contamination-free benchmark that synthesizes controllable-difficulty data for evaluating knowledge-free inductive reasoning through multi-step string rewrites.
+								<br><br>
+
+								Previously, I developed <a href="https://aclanthology.org/2025.naacl-long.457.pdf">CRScore</a> (NAACL 2025, Oral), a reference-free metric for evaluating code review comments using LLM-generated code quality rubrics, static analysis, and embedding models. I also conducted an <a href="https://aclanthology.org/2025.acl-long.1432/">investigative study</a> (ACL 2025, Oral, top 10%) that framed sound law induction as a programming-by-example problem and analyzed how different synthetic data distributions affect downstream performance on low-resource linguistic tasks.
+								<br><br>
+
+								Beyond my published research, I led the CMU team to the finals of the <a href="https://www.amazon.science/nova-ai-challenge">Amazon Nova AI Challenge</a> (2025), where we trained LLMs to generate secure code by combining GRPO, deliberative alignment, and static analysis tools including AWS CodeGuru, Bandit, and CodeQL to produce safe, CWE-free code. I have also explored the use of LLMs to generate reflection questions for collaborative SQL programming. Our <a href="https://dl.acm.org/doi/10.1007/978-3-031-64302-6_4">first study</a> received Best Paper and Best Student Paper nominations at AIED 2024, and our <a href="https://bera-journals.onlinelibrary.wiley.com/doi/10.1111/bjet.13548">follow-up study</a> was published in the <i>British Journal of Educational Technology</i> (BJET).
+
 								 
 								<!-- I recently finished a project where I created <a href="https://arxiv.org/abs/2409.19801">CRScore</a> an automated metric for evaluating code review comments in a reference free manner using LLMs and static analysis tools like code smell detectors. -->
 
