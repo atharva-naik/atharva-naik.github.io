@@ -1,0 +1,148 @@
+<svg width="800" height="510" viewBox="0 0 800 510" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#64748b"/>
+    </marker>
+    <marker id="arr-blue" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <polygon points="0 0, 9 3.5, 0 7" fill="#3b82f6"/>
+    </marker>
+    <marker id="arr-faint" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#94a3b8"/>
+    </marker>
+    <marker id="arr-faint-rev" markerWidth="7" markerHeight="5" refX="1" refY="2.5" orient="auto">
+      <polygon points="7 0, 0 2.5, 7 5" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <!-- Phase background tints -->
+  <rect x="0" y="0" width="400" height="510" fill="#f8fafc"/>
+  <rect x="400" y="0" width="400" height="510" fill="#fafafa"/>
+
+  <!-- Phase chips -->
+  <rect x="30" y="12" width="155" height="24" rx="12" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
+  <text x="107" y="28" text-anchor="middle" font-size="11" font-weight="bold" fill="#1d4ed8">Development Phase</text>
+
+  <rect x="615" y="12" width="150" height="24" rx="12" fill="#fee2e2" stroke="#fca5a5" stroke-width="1"/>
+  <text x="690" y="28" text-anchor="middle" font-size="11" font-weight="bold" fill="#b91c1c">Evaluation Phase</text>
+
+  <!-- Dashed center divider -->
+  <line x1="400" y1="8" x2="400" y2="502" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="6,4"/>
+
+  <!-- ======== LEFT: DEVELOPMENT ======== -->
+
+  <!-- Agent box -->
+  <rect x="52" y="48" width="318" height="74" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="211" y="72" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e40af">Agent  (any frontier model)</text>
+  <text x="211" y="91" text-anchor="middle" font-size="11" fill="#374151">reads: codebase + paper + easy benchmark results</text>
+  <text x="211" y="109" text-anchor="middle" font-size="11" fill="#374151">writes: modified orchestration, prompts, CMA-ES repr.</text>
+
+  <!-- Arrow: Agent → Centaur -->
+  <line x1="211" y1="122" x2="211" y2="143" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="223" y="137" font-size="10" fill="#64748b">modifies</text>
+
+  <!-- Centaur box (left) -->
+  <rect x="52" y="148" width="318" height="158" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="211" y="171" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f172a">Centaur</text>
+
+  <!-- CMA-ES inner box -->
+  <rect x="68" y="182" width="122" height="106" rx="6" fill="white" stroke="#cbd5e1" stroke-width="1.1"/>
+  <text x="129" y="207" text-anchor="middle" font-size="12" font-weight="bold" fill="#0f172a">CMA-ES</text>
+  <text x="129" y="224" text-anchor="middle" font-size="10" fill="#6b7280">every trial</text>
+  <text x="129" y="240" text-anchor="middle" font-size="10" fill="#6b7280">maintains search</text>
+  <text x="129" y="256" text-anchor="middle" font-size="10" fill="#6b7280">distribution</text>
+  <text x="129" y="272" text-anchor="middle" font-size="10" fill="#6b7280">proposes config</text>
+
+  <!-- Opus 5 inner box (left) -->
+  <rect x="228" y="182" width="126" height="106" rx="6" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.1"/>
+  <!-- padlock body -->
+  <rect x="272" y="194" width="12" height="9" rx="2" fill="none" stroke="#3b82f6" stroke-width="1.2"/>
+  <!-- padlock shackle -->
+  <path d="M274.5,194 C274.5,190 281.5,190 281.5,194" fill="none" stroke="#3b82f6" stroke-width="1.2"/>
+  <text x="289" y="203" font-size="9" fill="#3b82f6" font-weight="bold">pinned</text>
+  <text x="291" y="218" text-anchor="middle" font-size="11" font-weight="bold" fill="#1d4ed8">Opus 5</text>
+  <text x="291" y="235" text-anchor="middle" font-size="10" fill="#4b5563">30% of trials</text>
+  <text x="291" y="251" text-anchor="middle" font-size="10" fill="#4b5563">gets CMA-ES</text>
+  <text x="291" y="267" text-anchor="middle" font-size="10" fill="#4b5563">state context</text>
+  <text x="291" y="283" text-anchor="middle" font-size="10" fill="#4b5563">suggests config</text>
+
+  <!-- Arrows between CMA-ES and Opus 5 (left) -->
+  <line x1="190" y1="218" x2="226" y2="218" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,2" marker-end="url(#arr-faint)"/>
+  <text x="208" y="212" text-anchor="middle" font-size="9" fill="#94a3b8">state</text>
+  <line x1="226" y1="248" x2="190" y2="248" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,2" marker-end="url(#arr-faint)"/>
+  <text x="208" y="262" text-anchor="middle" font-size="9" fill="#94a3b8">config</text>
+
+  <!-- Arrow: Centaur → Easy benchmark -->
+  <line x1="211" y1="306" x2="211" y2="327" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="223" y="321" font-size="10" fill="#64748b">runs on</text>
+
+  <!-- Easy benchmark box -->
+  <rect x="52" y="332" width="318" height="120" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="211" y="357" text-anchor="middle" font-size="13" font-weight="bold" fill="#14532d">Easy Benchmark</text>
+  <text x="211" y="377" text-anchor="middle" font-size="11" fill="#374151">GPT-2 style · ~15M params · 6 HPs · FineWeb</text>
+  <text x="211" y="395" text-anchor="middle" font-size="11" fill="#374151">up to 20-trial agent budget · H100 via Modal</text>
+  <text x="211" y="415" text-anchor="middle" font-size="11" fill="#374151">metric: val_bpb (used to guide iteration)</text>
+  <text x="211" y="438" text-anchor="middle" font-size="11" fill="#15803d" font-style="italic">visible to agent</text>
+
+  <!-- Feedback loop curved arrow -->
+  <path d="M 62 452 C 14 452 14 84 52 84" fill="none" stroke="#94a3b8" stroke-width="1.3" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+  <!-- Rotated label along the curve -->
+  <text font-size="10" fill="#94a3b8" text-anchor="middle" transform="translate(10,268) rotate(-90)">results → iterate (≤ 20 trials)</text>
+
+  <!-- ======== CENTER: SUBMIT ARROW ======== -->
+  <line x1="370" y1="227" x2="428" y2="227" stroke="#3b82f6" stroke-width="2" marker-end="url(#arr-blue)"/>
+  <text x="399" y="215" text-anchor="middle" font-size="10" font-weight="bold" fill="#1d4ed8">submit</text>
+  <text x="399" y="241" text-anchor="middle" font-size="10" font-weight="bold" fill="#1d4ed8">Centaur++</text>
+
+  <!-- ======== RIGHT: EVALUATION ======== -->
+
+  <!-- Centaur++ box (right) -->
+  <rect x="430" y="148" width="328" height="158" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+  <!-- "code frozen" badge -->
+  <rect x="535" y="158" width="108" height="20" rx="10" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="589" y="172" text-anchor="middle" font-size="10" fill="#92400e">● code frozen</text>
+  <text x="486" y="172" font-size="13" font-weight="bold" fill="#0f172a">Centaur++</text>
+
+  <!-- CMA-ES inner box (right) -->
+  <rect x="446" y="182" width="122" height="106" rx="6" fill="white" stroke="#cbd5e1" stroke-width="1.1"/>
+  <text x="507" y="207" text-anchor="middle" font-size="12" font-weight="bold" fill="#0f172a">CMA-ES</text>
+  <text x="507" y="224" text-anchor="middle" font-size="10" fill="#6b7280">every trial</text>
+  <text x="507" y="240" text-anchor="middle" font-size="10" fill="#6b7280">maintains search</text>
+  <text x="507" y="256" text-anchor="middle" font-size="10" fill="#6b7280">distribution</text>
+  <text x="507" y="272" text-anchor="middle" font-size="10" fill="#6b7280">proposes config</text>
+
+  <!-- Opus 5 inner box (right) -->
+  <rect x="606" y="182" width="136" height="106" rx="6" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.1"/>
+  <!-- padlock body -->
+  <rect x="650" y="194" width="12" height="9" rx="2" fill="none" stroke="#3b82f6" stroke-width="1.2"/>
+  <!-- padlock shackle -->
+  <path d="M652.5,194 C652.5,190 659.5,190 659.5,194" fill="none" stroke="#3b82f6" stroke-width="1.2"/>
+  <text x="667" y="203" font-size="9" fill="#3b82f6" font-weight="bold">pinned</text>
+  <text x="671" y="218" text-anchor="middle" font-size="11" font-weight="bold" fill="#1d4ed8">Opus 5</text>
+  <text x="671" y="235" text-anchor="middle" font-size="10" fill="#4b5563">30% of trials</text>
+  <text x="671" y="251" text-anchor="middle" font-size="10" fill="#4b5563">gets CMA-ES</text>
+  <text x="671" y="267" text-anchor="middle" font-size="10" fill="#4b5563">state context</text>
+  <text x="671" y="283" text-anchor="middle" font-size="10" fill="#4b5563">suggests config</text>
+
+  <!-- Arrows between CMA-ES and Opus 5 (right) -->
+  <line x1="568" y1="218" x2="604" y2="218" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,2" marker-end="url(#arr-faint)"/>
+  <text x="586" y="212" text-anchor="middle" font-size="9" fill="#94a3b8">state</text>
+  <line x1="604" y1="248" x2="568" y2="248" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,2" marker-end="url(#arr-faint)"/>
+  <text x="586" y="262" text-anchor="middle" font-size="9" fill="#94a3b8">config</text>
+
+  <!-- Arrow: Centaur++ → Hard benchmark -->
+  <line x1="594" y1="306" x2="594" y2="327" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="606" y="321" font-size="10" fill="#64748b">runs on</text>
+
+  <!-- Hard benchmark box -->
+  <rect x="430" y="332" width="328" height="120" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="594" y="357" text-anchor="middle" font-size="13" font-weight="bold" fill="#7f1d1d">Hard Benchmark</text>
+  <text x="594" y="377" text-anchor="middle" font-size="11" fill="#374151">LLaMA-style · ~100M params · 18–20 HPs</text>
+  <text x="594" y="395" text-anchor="middle" font-size="11" fill="#374151">code data (The Stack) · 3 seeds × 12 trials</text>
+  <text x="594" y="415" text-anchor="middle" font-size="11" fill="#374151">scored: val_bpb vs pre-run Centaur baseline</text>
+  <text x="594" y="438" text-anchor="middle" font-size="11" fill="#b91c1c" font-style="italic">hidden from agent</text>
+
+  <!-- Score output -->
+  <line x1="594" y1="452" x2="594" y2="474" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="517" y="477" width="154" height="26" rx="5" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.2"/>
+  <text x="594" y="494" text-anchor="middle" font-size="12" font-weight="bold" fill="#713f12">val_bpb improvement</text>
+</svg>
