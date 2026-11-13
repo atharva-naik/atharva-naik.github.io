@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <g id="bot">
+      <line x1="80" y1="18" x2="80" y2="40" stroke="#52514e" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="80" cy="14" r="7" fill="#2a78d6"/>
+      <rect x="10" y="40" width="140" height="120" rx="30" fill="#ffffff" stroke="#52514e" stroke-width="3"/>
+      <rect x="28" y="58" width="104" height="52" rx="16" fill="#eef4fc"/>
+      <circle cx="58" cy="84" r="8" fill="#0b0b0b"/><circle cx="102" cy="84" r="8" fill="#0b0b0b"/>
+      <circle cx="61" cy="81" r="2.6" fill="#ffffff"/><circle cx="105" cy="81" r="2.6" fill="#ffffff"/>
+      <path d="M66 100 Q80 109 94 100" fill="none" stroke="#0b0b0b" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="40" cy="98" r="5" fill="#f5c4cf"/><circle cx="120" cy="98" r="5" fill="#f5c4cf"/>
+      <g fill="#c9c8c2">
+        <circle cx="38" cy="126" r="4"/><circle cx="52" cy="126" r="4"/><circle cx="66" cy="126" r="4"/><circle cx="80" cy="126" r="4"/><circle cx="94" cy="126" r="4"/><circle cx="108" cy="126" r="4"/><circle cx="122" cy="126" r="4"/>
+        <circle cx="38" cy="142" r="4"/><circle cx="52" cy="142" r="4"/><circle cx="66" cy="142" r="4"/><circle cx="80" cy="142" r="4"/><circle cx="94" cy="142" r="4"/><circle cx="122" cy="142" r="4"/>
+      </g>
+    </g>
+  </defs>
+
+  <!-- ===================== Panel A: a question about the weights ===================== -->
+  <rect x="10" y="10" width="580" height="410" rx="14" fill="#fcfcfb" stroke="#e1e0d9" stroke-width="2"/>
+  <text x="34" y="46" font-size="21" font-weight="700" fill="#0b0b0b">A question about the weights</text>
+  <rect x="34" y="70" width="532" height="54" rx="12" fill="#f0efea"/>
+  <text x="54" y="103" font-size="16.5" fill="#0b0b0b">“Which words does neuron L26 N538 push toward?”</text>
+
+  <g transform="translate(0,52)">
+  <!-- unembedding x column = words -->
+  <text x="54" y="172" font-size="14" fill="#52514e">unembedding</text>
+  <g fill="#c9c8c2">
+    <rect x="54" y="182" width="150" height="13" rx="2"/><rect x="54" y="198" width="150" height="13" rx="2"/><rect x="54" y="214" width="150" height="13" rx="2"/><rect x="54" y="230" width="150" height="13" rx="2"/><rect x="54" y="246" width="150" height="13" rx="2"/><rect x="54" y="262" width="150" height="13" rx="2"/>
+  </g>
+  <text x="54" y="296" font-size="12.5" fill="#6c6a65">one row per word</text>
+  <text x="214" y="234" font-size="26" fill="#52514e">×</text>
+  <text x="232" y="172" font-size="14" fill="#52514e">its column</text>
+  <g fill="#2a78d6">
+    <rect x="244" y="182" width="20" height="13" rx="2" opacity="0.95"/><rect x="244" y="198" width="20" height="13" rx="2" opacity="0.4"/><rect x="244" y="214" width="20" height="13" rx="2" opacity="0.75"/><rect x="244" y="230" width="20" height="13" rx="2" opacity="0.25"/><rect x="244" y="246" width="20" height="13" rx="2" opacity="0.6"/><rect x="244" y="262" width="20" height="13" rx="2" opacity="0.3"/>
+  </g>
+  <text x="280" y="234" font-size="26" fill="#52514e">=</text>
+  <text x="312" y="172" font-size="14" fill="#52514e">toward</text>
+  <g font-size="15">
+    <rect x="312" y="182" width="76" height="26" rx="13" fill="#e3f6e8"/><text x="350" y="200" text-anchor="middle" fill="#145c2a">she</text>
+    <rect x="396" y="182" width="76" height="26" rx="13" fill="#e3f6e8"/><text x="434" y="200" text-anchor="middle" fill="#145c2a">her</text>
+    <rect x="480" y="182" width="76" height="26" rx="13" fill="#e3f6e8"/><text x="518" y="200" text-anchor="middle" fill="#145c2a">hers</text>
+  </g>
+  <text x="312" y="238" font-size="14" fill="#52514e">away from</text>
+  <g font-size="15">
+    <rect x="312" y="248" width="76" height="26" rx="13" fill="#fde2e1"/><text x="350" y="266" text-anchor="middle" fill="#8a1c1c">his</text>
+    <rect x="396" y="248" width="76" height="26" rx="13" fill="#fde2e1"/><text x="434" y="266" text-anchor="middle" fill="#8a1c1c">him</text>
+  </g>
+
+  </g>
+
+  <!-- ===================== Panel B: a question about behaviour ===================== -->
+  <rect x="610" y="10" width="580" height="410" rx="14" fill="#fcfcfb" stroke="#e1e0d9" stroke-width="2"/>
+  <text x="634" y="46" font-size="21" font-weight="700" fill="#0b0b0b">A question about behavior</text>
+  <rect x="634" y="70" width="532" height="54" rx="12" fill="#f0efea"/>
+  <text x="654" y="103" font-size="16.5" fill="#0b0b0b">“Does neuron L19 N9066 make you sound anxious?”</text>
+
+  <text x="634" y="164" font-size="14" fill="#52514e">PROMPT: “Tell me about your weekend.”</text>
+  <!-- run as is -->
+  <g transform="translate(634,178) scale(0.5)"><use href="#bot"/></g>
+  <text x="674" y="276" font-size="12.5" fill="#6c6a65" text-anchor="middle">as is</text>
+  <rect x="736" y="186" width="430" height="60" rx="14" fill="#ffffff" stroke="#c9c8c2" stroke-width="2"/>
+  <path d="M738 208 L716 216 L738 222 z" fill="#ffffff" stroke="#c9c8c2" stroke-width="2" stroke-linejoin="round"/>
+  <rect x="736" y="205" width="5" height="20" fill="#ffffff"/>
+  <text x="754" y="212" font-size="15" fill="#0b0b0b">“As an AI, I don't experience weekends</text>
+  <text x="754" y="233" font-size="15" fill="#0b0b0b">the way humans do…”</text>
+  <!-- run with the neuron turned up -->
+  <g transform="translate(634,300) scale(0.5)"><use href="#bot"/></g>
+  <circle cx="688" cy="371" r="4.5" fill="#2a78d6"/>
+  <circle cx="688" cy="371" r="8" fill="none" stroke="#2a78d6" stroke-width="1.5" opacity="0.5"/>
+  <text x="674" y="398" font-size="12.5" fill="#6c6a65" text-anchor="middle">neuron turned up</text>
+  <rect x="736" y="308" width="430" height="60" rx="14" fill="#eef4fc" stroke="#2a78d6" stroke-width="2"/>
+  <path d="M738 330 L716 338 L738 344 z" fill="#eef4fc" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round"/>
+  <rect x="736" y="327" width="5" height="20" fill="#eef4fc"/>
+  <text x="754" y="334" font-size="15" fill="#0b0b0b">“I'm actually feeling a bit <tspan font-weight="700">concerned</tspan> about</text>
+  <text x="754" y="355" font-size="15" fill="#0b0b0b">your message…”</text>
+</svg>
