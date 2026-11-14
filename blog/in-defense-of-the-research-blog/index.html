@@ -1,0 +1,133 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>In Defense of the &quot;Research Blog&quot;</title><meta name='description' content='Research blogs get dismissed as less rigorous than research papers, but compared to something like arXiv preprints,
+they are not much worse at rigor and reproducibility. A real limitation is weaker record-keeping, but
+this is fixable. We should see blogs and papers as complementary ways of communicating research rather than replacements for each other, since blogs have some good, concrete, and distinct use cases.'><meta property='og:type' content='article'><meta property='og:title' content='In Defense of the &quot;Research Blog&quot;'><meta property='og:description' content='Research blogs get dismissed as less rigorous than research papers, but compared to something like arXiv preprints,
+they are not much worse at rigor and reproducibility. A real limitation is weaker record-keeping, but
+this is fixable. We should see blogs and papers as complementary ways of communicating research rather than replacements for each other, since blogs have some good, concrete, and distinct use cases.'><meta property='og:url' content='https://atharva-naik.github.io/blog/in-defense-of-the-research-blog/'><meta name='twitter:card' content='summary'><link rel='canonical' href='https://atharva-naik.github.io/blog/in-defense-of-the-research-blog/'><style>
+:root{--ink:#0b0b0b;--ink2:#52514e;--muted:#6c6a65;--rule:#e1e0d9;--bg:#fcfcfb;--accent:#2a78d6}
+body{background:var(--bg);color:var(--ink);font:17px/1.62 Georgia,'Times New Roman',serif;margin:0}
+main{max-width:740px;margin:0 auto;padding:48px 22px 80px}
+h1{font:700 2rem/1.2 -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;margin:0 0 .4rem}
+h2{font:600 1.2rem/1.3 -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;margin:2.2rem 0 .6rem}
+.byline{color:var(--muted);font:.92rem -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;margin-bottom:.4rem}
+.status{display:inline-block;background:#fff6e0;border:1px dashed #d9a400;color:#6b5200;font:.82rem -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  padding:3px 10px;border-radius:4px;margin-bottom:1.6rem}
+a{color:var(--accent)}
+blockquote{margin:1rem 0;padding:8px 14px;border-left:3px solid #c9b8ee;background:#f6f2fd;color:#3d2f63;
+  font:.92rem/1.5 -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;border-radius:0 6px 6px 0}
+blockquote p{margin:.3rem 0}
+li{margin:.2rem 0}
+a.cite{color:inherit;text-decoration:none;border-bottom:1px dotted currentColor}a.cite:hover{color:var(--accent)}
+li:target{background:#fff3b0;border-radius:3px}html{scroll-behavior:smooth}
+.home{font:.88rem -apple-system,Segoe UI,Helvetica,Arial,sans-serif;margin-bottom:1.6rem}.home a{color:var(--muted);text-decoration:none}</style></head><body><main><div class='home'><a href='../'>← Blog</a></div><h1>In Defense of the &quot;Research Blog&quot;</h1><div class='byline'>Atharva Naik · November 14, 2026</div><h2>TL;DR</h2>
+<p>Research blogs get dismissed as less rigorous than research papers, but compared to something like arXiv preprints,
+they are not much worse at rigor and reproducibility. A real limitation is weaker record-keeping, but
+this is fixable. We should see blogs and papers as complementary ways of communicating research rather than replacements for each other, since blogs have some good, concrete, and distinct use cases.</p>
+<h2>Why I ended up writing this</h2>
+<p>I recently released the first part of my series on "auto weight-space programming" (<a class='cite' href='#ref-naik2026'>Naik et al., 2026</a>), and it made
+me appreciate how much effort can go into a research blog. It took roughly two weeks of on-and-off experiments and 1.5
+days of writing, with rounds of feedback from my co-authors, and a more rigorous version could have taken more.</p>
+<p>It also made me think about why I was putting in this much effort. Part of it was that I was passionate about the
+topic, but I didn't want to spend the time writing another paper. I believe papers are really good for exploring an
+idea end-to-end and more definitively, while a blog is a happy medium between just tweeting out an idea and a
+full-blown paper: a reasonable number of initial experiments, but maybe not a well-established baseline, a bunch of
+ablations, or having to mentally simulate R2's scathing review (or, in 2026, making your LLM roleplay R2 lol).</p>
+<h2>So how rigorous are blogs?</h2>
+<p>Research blogs are often dismissed as inferior to papers in rigor and trustworthiness. The first part is usually
+fair, since blogs tend to have fewer experiments, but counterintuitively, blogs can be more transparent.</p>
+<p>The blog that inspired my series (<a class='cite' href='#ref-takehi2026'>Takehi et al., 2026</a>) was met with a lot of skepticism and criticism for issues with
+its experiments. Its headline math result came from fixing reasoning loops in Qwen3.5-0.8B, which its own model card
+warns is prone to thinking loops. Its MATH-500 score went from 7.9% to 48.1% after the edit, but most of that gain came from the model actually finishing its answers instead of getting cut off mid-loop. The same approach could not
+improve Gemma 3 270M, a model that rarely loops. The blog reports both, and even says that fixing loops is not the
+same as making a model better at math, but the Gemma result was not mentioned in the
+<a href="https://x.com/rikiyatakehi/status/2117313742891327994">announcement thread</a>, which led with math "up to 6x".
+Beyer argued that the prompt gave away the fix: it "veeery much hints that looping is the issue" (<a class='cite' href='#ref-beyer2026'>Beyer, 2026</a>).
+One of the authors replied that the expanded prompt was written by Claude Code, asked to optimize the prompt for Astra
+with no human feedback, and that no one hinted at looping (<a class='cite' href='#ref-teoh2026'>Teoh, 2026</a>).
+Notably, that critique was only possible because the blog published its full prompts;
+Beyer said he "read the full page including prompts". Abdel Sadek asked why the PPO baselines weren't tuned, noting that
+tuning them took about 45 minutes of training on a single A6000 GPU (<a class='cite' href='#ref-sadek2026'>Abdel Sadek, 2026</a>). These are fair criticisms, and my first reaction was to become distrustful and dismissive of
+the work too. But the results held up: <a class='cite' href='#ref-krentsel2026'>Krentsel (2026)</a> reported reproducing them the same day, and added that the
+capability appears only in the latest generation of models. Others found similar results in other settings:
+independently, <a class='cite' href='#ref-papailiopoulos2026'>Papailiopoulos (2026)</a> at Microsoft found that Claude Code could backdoor a model by reprogramming
+fewer than 10 dormant neurons, with no training, in work that started in March 2026. So while the original results may have been blown out of proportion, there was substance to the idea.</p>
+<p>Now look at how fast preprints can follow a new release. "Weight-space programming for auditing clinical
+decision networks" (<a class='cite' href='#ref-nusrat2026'>Nusrat and Nusrat, 2026</a>) was posted on 3 November 2026, one day after the blog. Similarly,
+"JEV-as-a-Judge" (<a class='cite' href='#ref-li2026'>Li et al., 2026</a>) was posted on 22 September 2026, a week after JEV was announced (<a class='cite' href='#ref-almeida2026'>Almeida, 2026</a>), and has
+since been revised five times. Both report real experiments, but one has to stop and ask: should a day's or a week's worth of experiments be a
+paper-level preprint at all? I think that kind of early, fast result is exactly what a blog is for. Yet a common way to insult a paper is "this should have
+just been a blog, bro". I think this hierarchy between papers and blogs is silly. A blog can be a perfectly good way
+to express an idea, with more freedom and creativity, and still carry more rigor than a lot of the preprints flooding
+arXiv today.</p>
+<h2>How rigorous are preprints in 2026?</h2>
+<p>So what do you actually get from posting on arXiv? A permanent, timestamped record, a stable identifier, visible
+versions, light moderation, and indexing by search engines and citation databases. What you don't get is rigor,
+correctness, reproducibility, or review. arXiv's moderators check that a submission is on topic and looks like
+research, not whether its experiments hold up, and they were never meant to. A preprint can be just as hasty or
+overclaimed as any blog post, and the LaTeX template makes it <em>look</em> more serious than it is.</p>
+<p>This has gotten worse as papers have gotten cheaper to write. In late 2025, arXiv's CS category stopped accepting
+review articles and position papers unless they had already passed peer review, citing an "unmanageable influx" and
+noting that LLMs make papers, especially ones without new results, "fast and easy to write" (<a class='cite' href='#ref-arxiv2025'>arXiv, 2025</a>).</p>
+<p>To be fair, blogs do lack one thing that arXiv has: the record. A blog can be edited silently or disappear. The fixes
+exist but are manual: archived snapshots (the Wayback Machine), a DOI for a frozen copy (for example on Zenodo), and a
+public version history. So blogs lose on record-keeping, but that is fixable with a few opt-in steps on the writer's part.</p>
+<h2>What blogs are good for</h2>
+<p><strong>Saying what you actually think.</strong> In a paper, speculation and opinions get cut, or hidden behind "we hypothesize".
+In a blog, I can write down why I believe something, not just what I measured, as long as I label the speculation
+clearly. My own series has several of these.</p>
+<p><strong>Publishing what didn't work.</strong> Most failed experiments never see the light of day, so the compute feels wasted, and
+someone else repeats the same mistake. A blog lets you write "this didn't work yet, here is what we tried" without
+dressing it up as a win (or, as my partner's new vocal stim goes, "putting lipstick on a pig"). A whole group of findings in my first post is labeled "needs more effort".</p>
+<p><strong>Planting a flag, and checkpointing progress.</strong> A public, timestamped post shows that you had an idea and a result at
+a given time. It doesn't fully prevent getting scooped, but it helps, and for students it is a way to checkpoint
+progress between papers without waiting months on a review cycle.</p>
+<p><strong>Not betting everything on noisy review.</strong> Peer review is a lot more random than we like to admit. In the NeurIPS
+2021 consistency experiment, 10% of submissions were reviewed by two independent committees, which disagreed on 23% of
+them, and about half of the accepted papers would change if the process were rerun (<a class='cite' href='#ref-beygelzimer2023'>Beygelzimer et al., 2023</a>). A 2021
+follow-up to the 2014 experiment found that, for accepted papers, review scores did not even correlate with later
+citations (<a class='cite' href='#ref-cortes2021'>Cortes and Lawrence, 2021</a>). And the same paper can be rejected by one set of reviewers and win an award from another: Mamba (<a class='cite' href='#ref-gu2023'>Gu and Dao, 2023</a>)
+was rejected at ICLR 2024, with the meta-review citing missing Long Range Arena results and the reliance on perplexity
+(<a class='cite' href='#ref-iclr2024'>ICLR, 2024</a>), and then won an Outstanding Paper Award at COLM 2024 (<a class='cite' href='#ref-colm2024'>COLM, 2024</a>).</p>
+<h2>What role should the research blog play?</h2>
+<p>So is this me announcing that I'm going to publish blogs instead of papers? No, of course not. I don't think blogs
+should replace papers anytime soon, or even compete with preprints. I see them as a complementary, smaller, and more
+frequent unit of communication for useful research artifacts that don't belong in a preprint: failed results,
+reproductions, audits of benchmarks, baselines and frameworks, side quests, labeled speculation, and documentation of
+the whole research journey (more senior students should do this, to help junior students and people new to
+research).</p>
+<p>A blog is also a better outlet than salami slicing. In a system where the paper is the only unit that counts, there is a pull to
+cut one project into as many minimum publishable units as possible, each with just enough results to get through
+review. I'd rather put the in-between results in a blog and save the paper for when the idea is actually complete.
+As a bonus, fewer thinly sliced papers would take some pressure off a peer review system that is already struggling
+with the number of submissions.</p>
+<p>To earn trust, a research blog can borrow a few habits: making the artifacts public before or along with the post,
+labeling speculation and things that need more work, keeping a changelog and an archived or DOI'd version for citing,
+stating how AI tools were used, and getting some proofreading from collaborators (or even non-collaborators, ideally
+compensated in some way). I did most of these for my first post, though not yet the changelog or an archived copy. The beauty of a blog is that there are no hard rules,
+but habits like these help people trust it.</p>
+<h2>Conclusion</h2>
+<p>For cool new ideas that need more experiments, interesting failed results, and educated speculation, we should write
+more blogs, and save our best, most rigorous, highest-effort ideas for papers. Preprints guarantee nothing today, but
+if more early results went into blogs instead, a preprint might start to actually signal that kind of effort.</p>
+<h2>AI use</h2>
+<p>I used Claude Code (Claude Opus 5.5) to organize my thoughts, write initial drafts of some sections, search for
+citations, and fix grammar and polish the language. All the arguments are my own, and I take full responsibility for
+the content.</p>
+<h2>References</h2>
+<ul>
+<li id='ref-sadek2026'>Abdel Sadek, K. (2026). Post on X, 3 November 2026. <a href='https://x.com/Karim_abdelll/status/2117474032866279627'>https://x.com/Karim_abdelll/status/2117474032866279627</a></li>
+<li id='ref-almeida2026'>Almeida, D. (2026). Post on X announcing JEV, 15 September 2026. <a href='https://x.com/CompleteSkeptic/status/2099925682726002904'>https://x.com/CompleteSkeptic/status/2099925682726002904</a></li>
+<li id='ref-arxiv2025'>arXiv (2025). Attention Authors: Updated Practice for Review Articles and Position Papers in arXiv CS Category. arXiv blog, 31 October 2025. <a href='https://blog.arxiv.org/2025/10/31/attention-authors-updated-practice-for-review-articles-and-position-papers-in-arxiv-cs-category/'>https://blog.arxiv.org/2025/10/31/attention-authors-updated-practice-for-review-articles-and-position-papers-in-arxiv-cs-category/</a></li>
+<li id='ref-beyer2026'>Beyer, L. (2026). Post on X, 2 November 2026. <a href='https://x.com/giffmana/status/2117346161866514524'>https://x.com/giffmana/status/2117346161866514524</a></li>
+<li id='ref-beygelzimer2023'>Beygelzimer, A., Dauphin, Y. N., Liang, P., and Wortman Vaughan, J. (2023). Has the Machine Learning Review Process Become More Arbitrary as the Field Has Grown? The NeurIPS 2021 Consistency Experiment. <a href='https://arxiv.org/abs/2306.03262'>https://arxiv.org/abs/2306.03262</a></li>
+<li id='ref-colm2024'>COLM (2024). COLM 2024 Accepted Papers (Mamba: Outstanding Paper Award). <a href='https://colmweb.org/2024/AcceptedPapers.html'>https://colmweb.org/2024/AcceptedPapers.html</a></li>
+<li id='ref-cortes2021'>Cortes, C., and Lawrence, N. D. (2021). Inconsistency in Conference Peer Review: Revisiting the 2014 NeurIPS Experiment. <a href='https://arxiv.org/abs/2109.09774'>https://arxiv.org/abs/2109.09774</a></li>
+<li id='ref-gu2023'>Gu, A., and Dao, T. (2023). Mamba: Linear-Time Sequence Modeling with Selective State Spaces. <a href='https://arxiv.org/abs/2312.00752'>https://arxiv.org/abs/2312.00752</a></li>
+<li id='ref-iclr2024'>ICLR (2024). Mamba: Linear-Time Sequence Modeling with Selective State Spaces. ICLR 2024 submission, decision (Reject) and meta-review on OpenReview. <a href='https://openreview.net/forum?id=AL1fq05o7H'>https://openreview.net/forum?id=AL1fq05o7H</a></li>
+<li id='ref-krentsel2026'>Krentsel, A. (2026). Post on X, 2 November 2026. <a href='https://x.com/AlexKrentsel/status/2117376683724660898'>https://x.com/AlexKrentsel/status/2117376683724660898</a></li>
+<li id='ref-li2026'>Li, Y., Miao, Y., Krishnan, R., and Padman, R. (2026). JEV-as-a-Judge: Accept When Confident, Escalate When Unsure. <a href='https://arxiv.org/abs/2609.26550'>https://arxiv.org/abs/2609.26550</a></li>
+<li id='ref-naik2026'>Naik, A., Liu, E., and Gangal, V. (2026). Auto Weight-Space Programming. Blog series. <a href='https://atharva-naik.github.io/blog/awsp/'>https://atharva-naik.github.io/blog/awsp/</a></li>
+<li id='ref-nusrat2026'>Nusrat, H., and Nusrat, O. (2026). Weight-space programming for auditing clinical decision networks. <a href='https://arxiv.org/abs/2611.05341'>https://arxiv.org/abs/2611.05341</a></li>
+<li id='ref-papailiopoulos2026'>Papailiopoulos, D. (2026). Lazare, veni foras: Reprogramming Dormant Neurons to Backdoor AI Agents. X article, 10 November 2026. <a href='https://x.com/DimitrisPapail/status/2120245027804705121'>https://x.com/DimitrisPapail/status/2120245027804705121</a></li>
+<li id='ref-takehi2026'>Takehi, R., Teoh, J., Zhang, A., and Khattab, O. (2026). Sparks of Weight-Space Programming: LLMs can natively read &amp; write neural network weights. Blog post, 2 November 2026. <a href='https://rikiyat.github.io/blog/weight-space-programming/'>https://rikiyat.github.io/blog/weight-space-programming/</a></li>
+<li id='ref-teoh2026'>Teoh, J. (2026). Post on X, 2 November 2026. <a href='https://x.com/jayden_teoh_/status/2117363471008350347'>https://x.com/jayden_teoh_/status/2117363471008350347</a></li>
+</ul></main></body></html>
