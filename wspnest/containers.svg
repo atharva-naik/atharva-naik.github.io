@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 640" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-label="Diagram: an original task runs in one container; a benchmark adapter fetches an upstream benchmark at a pinned commit and runs each of its instances in its own container; both produce standard result files that feed a WSPNest release.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a1240"/><stop offset="1" stop-color="#2c1f66"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4b3aa0"/><stop offset="1" stop-color="#2f2475"/>
+    </linearGradient>
+    <linearGradient id="cardDark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2d235f"/><stop offset="1" stop-color="#221a4d"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffbe55"/><stop offset="1" stop-color="#ff7a3d"/>
+    </linearGradient>
+    <linearGradient id="pink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff8fc1"/><stop offset="1" stop-color="#e14d8f"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0b0620" flood-opacity="0.55"/>
+    </filter>
+    <filter id="blur"><feGaussianBlur stdDeviation="40"/></filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#ffb24a"/>
+    </marker>
+  </defs>
+
+  <!-- background with soft glowing blobs -->
+  <rect width="1120" height="640" rx="28" fill="url(#bg)"/>
+  <circle cx="180" cy="120" r="160" fill="#7b5cff" opacity="0.28" filter="url(#blur)"/>
+  <circle cx="960" cy="520" r="190" fill="#ff6fb1" opacity="0.18" filter="url(#blur)"/>
+  <circle cx="620" cy="330" r="150" fill="#4cc2ff" opacity="0.12" filter="url(#blur)"/>
+
+  <!-- ===================== left: one original task ===================== -->
+  <text x="56" y="58" font-size="13" font-weight="700" letter-spacing="2" fill="#b6a9ff">ORIGINAL TASK</text>
+  <text x="56" y="84" font-size="22" font-weight="700" fill="#ffffff">One task recipe per container</text>
+
+  <g filter="url(#shadow)">
+    <rect x="56" y="106" width="380" height="304" rx="20" fill="url(#card)" stroke="#7d6be0" stroke-opacity="0.5"/>
+  </g>
+  <!-- container header -->
+  <rect x="56" y="106" width="380" height="44" rx="20" fill="#5b48c2" opacity="0.55"/>
+  <circle cx="82" cy="128" r="5" fill="#ff7a3d"/><circle cx="98" cy="128" r="5" fill="#ffbe55"/><circle cx="114" cy="128" r="5" fill="#6fe3a0"/>
+  <text x="134" y="133" font-size="13" fill="#e9e4ff">logit-lens-4way container</text>
+
+  <!-- four parts of a task -->
+  <g font-size="13.5" fill="#f2efff">
+    <rect x="80" y="168" width="44" height="44" rx="11" fill="url(#cardDark)" stroke="#8f7ef0" stroke-opacity="0.6"/>
+    <path d="M94 179 h12 l6 6 v18 h-18 z" fill="none" stroke="#ffbe55" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M97 192 h10 M97 197 h10" stroke="#ffbe55" stroke-width="2" stroke-linecap="round"/>
+    <text x="138" y="187" font-weight="600">instruction.md</text><text x="138" y="205" font-size="12" fill="#b9b1e8">what the model is asked</text>
+
+    <rect x="80" y="226" width="44" height="44" rx="11" fill="url(#cardDark)" stroke="#8f7ef0" stroke-opacity="0.6"/>
+    <path d="M90 240 l12 -6 l12 6 v14 l-12 6 l-12 -6 z M90 240 l12 6 l12 -6 M102 246 v14" fill="none" stroke="#8fd3ff" stroke-width="2" stroke-linejoin="round"/>
+    <text x="138" y="245" font-weight="600">environment/</text><text x="138" y="263" font-size="12" fill="#b9b1e8">Dockerfile, weights as text</text>
+
+    <rect x="80" y="284" width="44" height="44" rx="11" fill="url(#cardDark)" stroke="#8f7ef0" stroke-opacity="0.6"/>
+    <path d="M91 306 l7 7 l14 -15" fill="none" stroke="#6fe3a0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="138" y="303" font-weight="600">tests/</text><text x="138" y="321" font-size="12" fill="#b9b1e8">the verifier, hidden from the model</text>
+
+    <rect x="80" y="342" width="44" height="44" rx="11" fill="url(#cardDark)" stroke="#8f7ef0" stroke-opacity="0.6"/>
+    <path d="M97 354 l12 10 l-12 10 z" fill="#ff8fc1"/>
+    <text x="138" y="361" font-weight="600">solution/</text><text x="138" y="379" font-size="12" fill="#b9b1e8">reference answer, checks the verifier</text>
+  </g>
+  <!-- small progress pill -->
+  <rect x="330" y="176" width="86" height="22" rx="11" fill="#1d1647"/>
+  <rect x="334" y="180" width="60" height="14" rx="7" fill="url(#orange)"/>
+
+  <!-- ===================== right: one benchmark adapter ===================== -->
+  <text x="512" y="58" font-size="13" font-weight="700" letter-spacing="2" fill="#ffb9dc">BENCHMARK ADAPTER</text>
+  <text x="512" y="84" font-size="22" font-weight="700" fill="#ffffff">One container per benchmark instance</text>
+
+  <!-- upstream -->
+  <g filter="url(#shadow)"><rect x="512" y="106" width="250" height="78" rx="18" fill="url(#cardDark)" stroke="#e45d99" stroke-opacity="0.6"/></g>
+  <circle cx="546" cy="134" r="5" fill="none" stroke="#ff8fc1" stroke-width="2.5"/><circle cx="546" cy="160" r="5" fill="none" stroke="#ff8fc1" stroke-width="2.5"/>
+  <circle cx="566" cy="146" r="5" fill="none" stroke="#ff8fc1" stroke-width="2.5"/>
+  <path d="M546 139 v16 M546 147 q0 -1 15 -1" fill="none" stroke="#ff8fc1" stroke-width="2.5"/>
+  <text x="584" y="138" font-size="14.5" font-weight="600" fill="#ffffff">Upstream benchmark</text>
+  <text x="584" y="158" font-size="12" fill="#e3d6ff">their repo, at a pinned commit</text>
+  <rect x="584" y="166" width="96" height="10" rx="5" fill="url(#pink)" opacity="0.85"/>
+
+  <!-- adapter -->
+  <path d="M637 186 V214" stroke="#ffb24a" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <g filter="url(#shadow)"><rect x="512" y="218" width="250" height="78" rx="18" fill="url(#card)" stroke="#7d6be0" stroke-opacity="0.6"/></g>
+  <rect x="530" y="236" width="40" height="40" rx="10" fill="url(#orange)"/>
+  <path d="M542 256 h16 M550 248 v16" stroke="#2c1f66" stroke-width="3" stroke-linecap="round"/>
+  <text x="584" y="252" font-size="14.5" font-weight="600" fill="#ffffff">Adapter</text>
+  <text x="584" y="272" font-size="12" fill="#e3d6ff">fetches, runs their eval, converts</text>
+
+  <!-- fan-out to instance containers -->
+  <g fill="none" stroke="#ffb24a" stroke-width="2" stroke-opacity="0.9">
+    <path d="M762 257 C 800 257, 800 150, 838 150" marker-end="url(#arrow)"/>
+    <path d="M762 257 C 805 257, 805 246, 838 246" marker-end="url(#arrow)"/>
+    <path d="M762 257 C 800 257, 800 342, 838 342" marker-end="url(#arrow)"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="842" y="112" width="220" height="76" rx="16" fill="url(#cardDark)" stroke="#8f7ef0" stroke-opacity="0.55"/>
+    <rect x="842" y="208" width="220" height="76" rx="16" fill="url(#cardDark)" stroke="#8f7ef0" stroke-opacity="0.55"/>
+    <rect x="842" y="304" width="220" height="76" rx="16" fill="url(#cardDark)" stroke="#8f7ef0" stroke-opacity="0.55"/>
+  </g>
+  <g font-size="13.5" fill="#f2efff">
+    <circle cx="862" cy="132" r="4" fill="#ff7a3d"/><circle cx="875" cy="132" r="4" fill="#ffbe55"/><circle cx="888" cy="132" r="4" fill="#6fe3a0"/>
+    <text x="862" y="164" font-weight="600">instance 1</text><text x="950" y="164" font-size="12" fill="#b9b1e8">own container</text>
+    <path d="M1030 150 l6 6 l12 -13" fill="none" stroke="#6fe3a0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="862" cy="228" r="4" fill="#ff7a3d"/><circle cx="875" cy="228" r="4" fill="#ffbe55"/><circle cx="888" cy="228" r="4" fill="#6fe3a0"/>
+    <text x="862" y="260" font-weight="600">instance 2</text><text x="950" y="260" font-size="12" fill="#b9b1e8">own container</text>
+    <path d="M1030 246 l6 6 l12 -13" fill="none" stroke="#6fe3a0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="862" cy="324" r="4" fill="#ff7a3d"/><circle cx="875" cy="324" r="4" fill="#ffbe55"/><circle cx="888" cy="324" r="4" fill="#6fe3a0"/>
+    <text x="862" y="356" font-weight="600">instance n</text><text x="950" y="356" font-size="12" fill="#b9b1e8">own container</text>
+    <path d="M1031 343 l14 14 M1045 343 l-14 14" stroke="#ff8fc1" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="952" y="400" font-size="12" fill="#b9b1e8" text-anchor="middle">nothing is copied into WSPNest</text>
+
+  <!-- ===================== bottom: standard results and the release ===================== -->
+  <g filter="url(#shadow)">
+    <rect x="96" y="456" width="300" height="64" rx="16" fill="url(#cardDark)" stroke="#8f7ef0" stroke-opacity="0.5"/>
+    <rect x="712" y="456" width="300" height="64" rx="16" fill="url(#cardDark)" stroke="#8f7ef0" stroke-opacity="0.5"/>
+  </g>
+  <g font-size="13.5" fill="#f2efff">
+    <text x="118" y="484" font-weight="600">standard result file</text><text x="118" y="503" font-size="12" fill="#b9b1e8">versions, answers and score</text>
+    <text x="734" y="484" font-weight="600">standard result file</text><text x="734" y="503" font-size="12" fill="#b9b1e8">their scores, in our format</text>
+  </g>
+  <path d="M246 412 V450" stroke="#ffb24a" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M1062 342 C 1090 342, 1090 488, 1016 488" fill="none" stroke="#ffb24a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)"><rect x="410" y="540" width="300" height="76" rx="18" fill="url(#card)" stroke="#ffbe55" stroke-opacity="0.7"/></g>
+  <g>
+    <rect x="432" y="586" width="12" height="16" rx="3" fill="#ff8fc1"/><rect x="450" y="576" width="12" height="26" rx="3" fill="#ffbe55"/>
+    <rect x="468" y="566" width="12" height="36" rx="3" fill="url(#orange)"/>
+  </g>
+  <text x="496" y="571" font-size="15" font-weight="700" fill="#ffffff">WSPNest release</text>
+  <text x="496" y="591" font-size="12" fill="#e3d6ff">per-entry and capability scores</text>
+  <text x="496" y="607" font-size="12" fill="#e3d6ff">citations for what you ran</text>
+  <path d="M246 522 C 246 578, 330 578, 404 578" fill="none" stroke="#ffb24a" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M862 522 C 862 578, 790 578, 716 578" fill="none" stroke="#ffb24a" stroke-width="2" marker-end="url(#arrow)"/>
+</svg>
