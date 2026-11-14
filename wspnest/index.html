@@ -25,6 +25,7 @@ h1{font:700 2.6rem/1.15 'Google Sans',-apple-system,Segoe UI,Helvetica,Arial,san
 .btns a.primary{background:linear-gradient(90deg,#ffbe55,#ff7a3d);color:#1a1240;border-color:transparent}
 .btns a.secondary{color:var(--ink);background:rgba(255,255,255,.04)}
 .btns a:hover{filter:brightness(1.08)}
+.btns a.disabled{opacity:.55;cursor:not-allowed}
 .status{display:inline-block;font:600 .78rem 'Google Sans',-apple-system,Segoe UI,Helvetica,Arial,sans-serif;background:rgba(255,178,74,.12);border:1px solid rgba(255,178,74,.45);color:#ffcf8a;border-radius:12px;padding:2px 10px;margin-bottom:12px}
 h2{font:700 1.5rem 'Google Sans',-apple-system,Segoe UI,Helvetica,Arial,sans-serif;margin:3rem 0 .8rem;padding-top:.6rem;color:#fff}
 h3{font:600 1.08rem 'Google Sans',-apple-system,Segoe UI,Helvetica,Arial,sans-serif;margin:1.4rem 0 .4rem;color:#fff}
@@ -57,7 +58,7 @@ footer{border-top:1px solid var(--rule);margin-top:4rem;padding-top:1.2rem;font:
   <h1><img src="logo.svg" alt="WSPNest logo" style="height:64px;vertical-align:-12px;margin-right:10px">WSPNest</h1>
   <p class="lede">A unified framework for weight-space programming (WSP) evals: our original tasks plus nested benchmarks, added with their authors' consent and credited fairly.</p>
   <p class="note">WSPNest is part of the <a href="https://atharva-naik.github.io/blog/awsp/">Auto Weight-Space Programming</a> blog series. Results and analysis of the first release will appear in Part 2.</p>
-  <div class="btns"><a class="primary" href="#contribute">Contribute a task</a><a class="secondary" href="https://github.com/atharva-naik/auto-weight-space-programming/tree/benchmark/wspnest">GitHub</a><a class="secondary" href="https://atharva-naik.github.io/blog/awsp/">Blog series</a></div>
+  <div class="btns"><a class="primary" href="#contribute">Contribute a task</a><a class="secondary" href="https://github.com/atharva-naik/auto-weight-space-programming/tree/benchmark/wspnest">GitHub</a><a class="secondary" href="https://atharva-naik.github.io/blog/awsp/">Blog series</a><a class="secondary disabled" href="#" aria-disabled="true" title="Discord server coming soon" onclick="return false">Discord (soon)</a></div>
 </section>
 
 <h2>Why</h2>
