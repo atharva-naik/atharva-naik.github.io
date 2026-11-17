@@ -83,12 +83,15 @@ task contributors are credited.</p>
 <p>Every entry in WSPNest is either a <b>task</b> or a <b>benchmark adapter</b> (a nested benchmark), and a benchmark is itself a collection of
 entries. The suite is a tree: tasks are the leaves.</p>
 <div class="tree">WSPNest release 2026.12
-├── logit-lens-4way              task recipe     (original)
-├── your-original-task           task recipe     (original)
-└── some-external-benchmark      benchmark adapter (opt-in, pinned to an upstream commit)
+├── logit-lens-4way              task recipe       (original)
+├── your-original-task           task recipe       (original)
+└── wsp-gym                      benchmark adapter (opt-in, pinned to an upstream commit)
     ├── instance 1               run in its own container
     ├── instance 2
     └── …</div>
+<p><b>At launch:</b> one original task, <code>logit-lens-4way</code> (from Part 1 of the series), and one adapter,
+<a href="https://github.com/emeraldant/WSP-Gym">WSP-Gym</a> by @emeraldant, included with the author's consent. More
+original tasks are in review.</p>
 <figure class="diagram"><img src="containers.svg" alt="An original task runs in one container; a benchmark adapter fetches an upstream benchmark at a pinned commit and runs each of its instances in its own container; both produce standard result files that feed a WSPNest release."><figcaption>An original task is one task recipe in one container. A benchmark adapter fetches someone else's benchmark at a pinned commit and runs each of its instances in its own container, using their evaluation code. Both produce the same kind of result file, which is what a release combines.</figcaption></figure>
 <div class="grid">
   <div class="card"><h3>Task recipe</h3><p>A container, an entrypoint and a scorer for one task, with a task card that
